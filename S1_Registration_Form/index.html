@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<body>
+
+   <form action="" method="post">
+  <!-- 
+    - Each participant must enter their name and email,
+      and these fields must be mandatory, 
+      as everyone will receive the event details via email.
+   -->
+    <div>   
+      <label for="name">Name</label>
+      <input required type="text" name="name" id="name" placeholder="Enter your name here...">
+    </div>
+    <div>
+      <label for="email">E-mail</label>
+      <input required type="email" name="email" id="email" placeholder="Enter your E-mail here...">
+    </div>
+<!-- 
+    - There must be a description field, 
+      where the user will describe what motivated 
+      him to participate in the event.
+ -->
+    <div>
+      <label for="description">What motivated you to participate in the event?</label><br>
+      <textarea id="description" name="description" rows="4" cols="50" placeholder="Describe here..."></textarea>  
+    </div>
+<!-- 
+  - There must be a field that allows the user to select 
+    their module in the Kenzie course.
+ -->
+    <div>
+      <label for="module">Select your Module</label>
+      <select id="module" name="module">
+        <option value="">Choose module</option>
+        <option value="M1">M1</option>
+        <option value="M2">M2</option>
+        <option value="M3">M3</option>
+        <option value="M4">M4</option>
+        <option value="M5">M5</option>
+        <option value="M6">M6</option>
+      </select>
+    </div>
+<!-- 
+  - At the end, the user must register a password.
+ -->
+    <div>
+      <label for="password">Password</label>
+      <input type='password' id='password' name='password' required placeholder="Enter your password here...">
+    </div>
+    <div>
+      <label for="confirm_password">Confirm Password</label>
+      <input type='password' id='confirm_password' name='confirm_password' required placeholder="Repeat the password...">
+    </div>
+<!-- 
+  - The user can choose to receive news in their email; 
+    To do this, you can click yes or no.
+  -->
+    <div>
+      <p>Receive news!</p>
+      <input type="radio" id="yes" name="yes" value="Yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="no" value="No">
+      <label for="no">No</label>
+    </div>
+<!-- 
+    - The user will click Submit to complete their 
+      registration for the event.
+ -->
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+   </form>
+</body>
+</html>

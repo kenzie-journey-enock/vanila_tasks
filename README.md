@@ -1,18 +1,15 @@
-# Profile page
-This delivery was developed to practice the use of semantic tags and HTML syntax. Now you know that you can wrap tags around others and get great results when building a project or web application.
+# Vanila Tasks
 
-## Goals
+This repository contains the tasks done in the first classes, practicing the web base (js, css and HTML)
 
-### 1) The body of the document must have an article covering all the content you will develop in this delivery;
+## S1 Profile Page 
 
-### 2) The article begins with a header that will involve a level one title (main title) and a paragraph:
-  - The level one title must contain your name;
-  - The paragraph should tell a little about you and contain an external link to another website;
+[Go](S1_Profile_Page)
 
-### 3) After the header comes the first section:
-  - The first section must have a level two title that contains the text "My Favorite Social Networks";
-  - and an unordered list of your favorite social networks;
+## S1 Registration Form 
 
-### 4) Create another section:
-  - The second section should have a level two title that contains the text "My goals at Kenzie";
-  - and an ordered list that contains your objectives;
+[Go](S1_Registration_Form)
+
+## S2 Using Selectors
+
+[Go](S2_Using_Selectors)
