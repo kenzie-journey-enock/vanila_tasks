@@ -13,3 +13,7 @@ This repository contains the tasks done in the first classes, practicing the web
 ## S2 Using Selectors
 
 [Go](S2_Using_Selectors)
+
+## S2 Applying Internal and External Spacing Concepts
+
+[Go](S2_Spacing_Concepts)
