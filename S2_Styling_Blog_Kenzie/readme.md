@@ -20,16 +20,16 @@ To practice, I will copy the visual identity of the existing [Kenzie Academy Bra
 
 ### Body
 
-- [ ] Align the elements to the center.
-- [ ] Use the Roboto font.
-- [ ] Enter a height of 100vh.
-- [ ] Change the Background.
-- [ ] Let your creativity flow.
-- [ ] Paragraphs
-- [ ] Links
-- [ ] Add borders
-- [ ] Use internal spacing (padding)
-- [ ] Newsletter: Style the form using creativity!
+- [x] Align the elements to the center.
+- [x] Use the Roboto font.
+- [x] Enter a height of 100vh.
+- [x] Change the Background.
+- [x] Let your creativity flow.
+- [x] Paragraphs
+- [x] Links
+- [x] Add borders
+- [x] Use internal spacing (padding)
+- [x] Newsletter: Style the form using creativity!
 
 ## Guide UI
 
