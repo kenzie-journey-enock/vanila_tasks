@@ -1,4 +1,4 @@
- <img align="right" width="10%" src='assets/logo_kenzie.png' />
+ <img align="right" width="30%" src='assets/logo_kenzie.png' />
 
 # Styling Blog Kenzie
 
