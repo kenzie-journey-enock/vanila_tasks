@@ -21,3 +21,7 @@ This repository contains the tasks done in the first classes, practicing the web
 ## S2 Using Pseudo Classes
 
 [Go](S2_Pseudo_Classes)
+
+## S2 Styling Blog Kenzie
+
+[Go](S2_Styling_Blog_Kenzie)
