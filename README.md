@@ -17,3 +17,7 @@ This repository contains the tasks done in the first classes, practicing the web
 ## S2 Applying Internal and External Spacing Concepts
 
 [Go](S2_Spacing_Concepts)
+
+## S2 Using Pseudo Classes
+
+[Go](S2_Pseudo_Classes)
