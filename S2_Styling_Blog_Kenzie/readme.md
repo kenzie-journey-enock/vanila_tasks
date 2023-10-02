@@ -15,7 +15,7 @@ To practice, I will copy the visual identity of the existing [Kenzie Academy Bra
 
 ## Styling requitements
 
- <img align="left" width="50%" src='assets/logo_kenzie.png' />
+ <img align="left" width="10%" src='assets/logo_kenzie.png' />
 
 ### Body
 
