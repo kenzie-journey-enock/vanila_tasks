@@ -1,3 +1,5 @@
+ <img align="left" width="10%" src='assets/logo_kenzie.png' />
+ 
 # Styling Blog Kenzie
 
 ## Objective
@@ -14,8 +16,6 @@ To practice, I will copy the visual identity of the existing [Kenzie Academy Bra
 - [Gradient effects](https://cssgradient.io/)
 
 ## Styling requitements
-
- <img align="left" width="10%" src='assets/logo_kenzie.png' />
 
 ### Body
 
