@@ -60,8 +60,6 @@ I decided to create the blog based on the visual identity of the official [Kenzi
 
 ![image](assets/guide/pallete_color.png)
 
-![image](assets/guide/pallete_color_01.png)
-
 ![image](assets/guide/pallete_color_02.png)
 
 ![image](assets/guide/pallete_color_03.png)
