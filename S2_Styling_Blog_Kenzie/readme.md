@@ -11,6 +11,7 @@ To practice, I will copy the visual identity of the existing [Kenzie Academy Bra
 ## Useful Links 
 
 - [Color palette](https://yeun.github.io/open-color/)
+- [Color hex](https://www.color-hex.com/)
 - [Images](https://pixabay.com/pt/)
 - [Shadow effects](https://www.cssmatic.com/box-shadow)
 - [Gradient effects](https://cssgradient.io/)
@@ -54,3 +55,17 @@ I decided to create the blog based on the visual identity of the official [Kenzi
 ### Footer
 
 ![image](assets/guide/blog_kenzie_footer.png)
+
+### Colors Pallete
+
+![image](assets/guide/pallete_color.png)
+
+![image](assets/guide/pallete_color_01.png)
+
+![image](assets/guide/pallete_color_02.png)
+
+![image](assets/guide/pallete_color_03.png)
+
+![image](assets/guide/pallete_color_04.png)
+
+![image](assets/guide/pallete_color_05.png)
