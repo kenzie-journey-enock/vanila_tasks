@@ -51,3 +51,7 @@ This repository contains the tasks done in the first classes, practicing the web
 ## S2 CSS: Developing KenzieFlix Interface
 
 [Go](11_S2_CSS_Developing_KenzieFlix_Interface)
+
+## S3 Step by Step Logic
+
+[Go](12_S3_Step_by_Step_Logic)
