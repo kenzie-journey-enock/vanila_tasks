@@ -25,3 +25,7 @@ This repository contains the tasks done in the first classes, practicing the web
 ## S2 Styling Blog Kenzie
 
 [Go](S2_Styling_Blog_Kenzie)
+
+## S2 Flexbox Step by Step
+
+[Go](S2_Flexbox_Step_by_Step)
