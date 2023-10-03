@@ -55,3 +55,7 @@ This repository contains the tasks done in the first classes, practicing the web
 ## S3 Step by Step Logic
 
 [Go](12_S3_Step_by_Step_Logic)
+
+## S3 Logical Thinking
+
+[Go](13_S3_Logical_Thinking)
