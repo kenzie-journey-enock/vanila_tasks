@@ -2,7 +2,7 @@
 
 This repository contains the tasks done in the first classes, practicing the web base (js, css and HTML).
 
-# Links Games for training
+### Links Games for training
 
 - [Flexbox Froggy](https://flexboxfroggy.com)
 
@@ -43,3 +43,7 @@ This repository contains the tasks done in the first classes, practicing the web
 ## S2 Flexbox Step by Step 2
 
 [Go](09_S2_Flexbox_Step_by_Step_2)
+
+## S2 Blog With Flexbox
+
+[Go](10_S2_Blog_With_Flexbox)
