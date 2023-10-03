@@ -2,9 +2,8 @@
 
 Transform the following chocolate cake recipe inti an algorithm (step by step), exemplifying input, processing and output.
 
-```js
 "Beat the butter and sugar in a mixer. Add the egg yolks one by one until you obtain a homogeneous cream. Add the milk little by little. Turn off the mixer and add the wheat flour, chocolate powder, yeast and set aside. Beat the egg whites and add them to the chocolate mixture, mixing gently. Grease a small rectangular pan with butter and flour, place the dough in it and bake in a preheated medium oven for approximately 30 minutes. Unmold the cake while it is still hot and set aside."
-```
+
 
 ```js
 const task = {
