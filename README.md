@@ -1,6 +1,12 @@
 # Vanila Tasks
 
-This repository contains the tasks done in the first classes, practicing the web base (js, css and HTML)
+This repository contains the tasks done in the first classes, practicing the web base (js, css and HTML).
+
+# Links Games for training
+
+- [Flexbox Froggy](https://flexboxfroggy.com)
+
+# Tasks
 
 ## S1 Profile Page 
 
@@ -33,3 +39,7 @@ This repository contains the tasks done in the first classes, practicing the web
 ## S2 Display
 
 [Go](08_S2_Display)
+
+## S2 Flexbox Step by Step 2
+
+[Go](09_S2_Flexbox_Step_by_Step_2)
