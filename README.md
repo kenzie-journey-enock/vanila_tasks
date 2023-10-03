@@ -47,3 +47,7 @@ This repository contains the tasks done in the first classes, practicing the web
 ## S2 Blog With Flexbox
 
 [Go](10_S2_Blog_With_Flexbox)
+
+## S2 CSS: Developing KenzieFlix Interface
+
+[Go](11_S2_CSS_Developing_KenzieFlix_Interface)
