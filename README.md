@@ -62,8 +62,24 @@ This repository contains the tasks done in the first classes, practicing the web
 
 ## S3 Working with Variables
 
-[Go](14_S3_Working_with_Variables)
+[Go](14_S3_JS_Working_with_Variables)
 
 ## S3 Practicing Operators
 
-[Go](15_S3_Practicing_Operators)
+[Go](15_S3_JS_Practicing_Operators)
+
+## S3 Practicing Strings
+
+[Go](16_S3_JS_Practicing_Strings)
+
+# S3 Physical Fitness Test
+
+[Go](18_S3_JS_Physical_Fitness_Test)
+
+# S4 Functions without Parameters
+
+[Go](19_S4_JS_Functions_without_Parameters)
+
+# S4 Functions with Parameters
+
+[Go](20_S4_JS_Functions_with_Parameters)
