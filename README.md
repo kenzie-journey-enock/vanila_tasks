@@ -59,3 +59,11 @@ This repository contains the tasks done in the first classes, practicing the web
 ## S3 Logical Thinking
 
 [Go](13_S3_Logical_Thinking)
+
+## S3 Working with Variables
+
+[Go](14_S3_Working_with_Variables)
+
+## S3 Practicing Operators
+
+[Go](15_S3_Practicing_Operators)
