@@ -72,14 +72,18 @@ This repository contains the tasks done in the first classes, practicing the web
 
 [Go](16_S3_JS_Practicing_Strings)
 
-# S3 Physical Fitness Test
+## S3 Physical Fitness Test
 
 [Go](18_S3_JS_Physical_Fitness_Test)
 
-# S4 Functions without Parameters
+## S4 Functions without Parameters
 
 [Go](19_S4_JS_Functions_without_Parameters)
 
-# S4 Functions with Parameters
+## S4 Functions with Parameters
 
 [Go](20_S4_JS_Functions_with_Parameters)
+
+## S4 Debugging with console.log()
+
+[Go](21_S4_JS_Debugging_with_console)
