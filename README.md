@@ -6,96 +6,20 @@ This repository contains the tasks done in the first classes, practicing the web
 
 - [Flexbox Froggy](https://flexboxfroggy.com)
 
-# Tasks
+## Sprints
 
-## S1 Profile Page 
+### S1 HTML
 
-[Go](01_S1_Profile_Page)
+[Go](S1_HTML)
 
-## S1 Registration Form 
+### S2 CSS
 
-[Go](02_S1_Registration_Form)
+[Go](S2_CSS)
 
-## S2 Using Selectors
+### S3 JS Programming Logic
 
-[Go](03_S2_Using_Selectors)
+[Go](S3_JS_Programming_Logic)
 
-## S2 Applying Internal and External Spacing Concepts
+### S4 JS Functions
 
-[Go](04_S2_Spacing_Concepts)
-
-## S2 Using Pseudo Classes
-
-[Go](05_S2_Pseudo_Classes)
-
-## S2 Styling Blog Kenzie
-
-[Go](06_S2_Styling_Blog_Kenzie)
-
-## S2 Flexbox Step by Step
-
-[Go](07_S2_Flexbox_Step_by_Step)
-
-## S2 Display
-
-[Go](08_S2_Display)
-
-## S2 Flexbox Step by Step 2
-
-[Go](09_S2_Flexbox_Step_by_Step_2)
-
-## S2 Blog With Flexbox
-
-[Go](10_S2_Blog_With_Flexbox)
-
-## S2 CSS: Developing KenzieFlix Interface
-
-[Go](11_S2_CSS_Developing_KenzieFlix_Interface)
-
-## S3 Step by Step Logic
-
-[Go](12_S3_Step_by_Step_Logic)
-
-## S3 Logical Thinking
-
-[Go](13_S3_Logical_Thinking)
-
-## S3 Working with Variables
-
-[Go](14_S3_JS_Working_with_Variables)
-
-## S3 Practicing Operators
-
-[Go](15_S3_JS_Practicing_Operators)
-
-## S3 Practicing Strings
-
-[Go](16_S3_JS_Practicing_Strings)
-
-## S3 Physical Fitness Test
-
-[Go](18_S3_JS_Physical_Fitness_Test)
-
-## S4 Functions without Parameters
-
-[Go](19_S4_JS_Functions_without_Parameters)
-
-## S4 Functions with Parameters
-
-[Go](20_S4_JS_Functions_with_Parameters)
-
-## S4 Debugging with console.log()
-
-[Go](21_S4_JS_Debugging_with_console)
-
-## S4 Reusing Functions
-
-[Go](22_S4_JS_Reusing_Functions)
-
-## S4 Finding Bugs
-
-[Go](23_S4_JS_Finding_Bugs)
-
-## S4 Refactoring Physical Fitness Test
-
-[Go](24_S4_JS_Refactoring_Physical_Fitness_Test)
+[Go](S4_JS_Functions)
