@@ -87,3 +87,15 @@ This repository contains the tasks done in the first classes, practicing the web
 ## S4 Debugging with console.log()
 
 [Go](21_S4_JS_Debugging_with_console)
+
+## S4 Reusing Functions
+
+[Go](22_S4_JS_Reusing_Functions)
+
+## S4 Finding Bugs
+
+[Go](23_S4_JS_Finding_Bugs)
+
+## S4 Refactoring Physical Fitness Test
+
+[Go](24_S4_JS_Refactoring_Physical_Fitness_Test)
