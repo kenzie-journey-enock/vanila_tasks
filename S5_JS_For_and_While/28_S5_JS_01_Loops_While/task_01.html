@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 01</title>
+</head>
+<body>
+    <h1>Task 01</h1>
+    <h2>Calculate and alert the total to be paid. Consider that the customer must enter the number 0 when the order is closed.
+        When the customer enters an invalid value, an alert will appear with the message: "Order unavailable" or "Order not found".</h2>
+    <script>
+    let choice = parseInt(prompt("Enter product code or 0 to exit"))
+    let totalOrderValue = 0
+    let quantity = 0
+    while(choice != 0){
+        if(choice == 100){
+            quantity = parseInt(prompt("How much is this item?"))
+            totalOrderValue += quantity * 1.20
+        }else if(choice == 101){
+            quantity = parseInt(prompt("How much is this item?"))
+            totalOrderValue += quantity * 1.30
+        }else if(choice == 102){
+            quantity = parseInt(prompt("How much is this item?"))
+            totalOrderValue += quantity * 1.50
+
+        }else if(choice == 103){
+            quantity = parseInt(prompt("How much is this item?"))
+            totalOrderValue += quantity * 1.20
+
+        }else if(choice == 104){
+            quantity = parseInt(prompt("How much is this item?"))
+            totalOrderValue += quantity * 1.30
+        }else{
+            alert('Product unavailable')
+        }
+        choice = parseInt(prompt("Enter the product code or 0 to complete the order"))
+    }
+    alert(`Your order was at ${totalOrderValue}`)
+    </script>
+</body>
+</html>

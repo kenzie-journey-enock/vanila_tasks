@@ -23,3 +23,7 @@ This repository contains the tasks done in the first classes, practicing the web
 ### S4 JS Functions
 
 [Go](S4_JS_Functions)
+
+### S5 JS For and While
+
+[Go](S5_JS_For_and_While)

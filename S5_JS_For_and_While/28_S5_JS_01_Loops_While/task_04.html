@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 04</title>
+</head>
+<body>
+  <h1>Task 04</h1>
+  <h2>Write a program that as long as the input is positive integers, less than 10, continues adding. 
+    When a negative value or greater than 10 is entered, stop execution, alert the sum and average.</h2>
+  <script>
+  let value = parseFloat(prompt("Enter value between 0 and 10!"))
+  let sum = 0
+  let count = 0
+
+  while(value >= 0 && value <= 10) {
+      sum += value
+      count++
+      alert(`Added value! Sum is ${sum}`)
+      alert(`Count numbers: ${count}`)
+
+      value = parseFloat(prompt("Enter value between 0 and 10!"))
+  }
+  alert('Stop!')
+
+  let average = sum / count
+  alert(`The final sum is: ${sum}`)
+  alert(`The average is: ${average}`)
+  </script>
+</body>
+</html>

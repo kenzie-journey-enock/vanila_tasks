@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 03</title>
+</head>
+<body>
+  <h1>Task 03</h1>
+  <h2>Write a program that reads a username and password and does not accept the password that is the same as the username, showing an error message and asking for the information again.</h2>
+  <script>
+  function createInput(label) {
+    return prompt(`Enter your ${label}`)
+  }
+  function createAlert(label) {
+    return alert(`Your ${label} is required!`)
+  }
+  let username = createInput('username')
+  let password = createInput('password')
+  while(username === password || !username || !password) {
+      if(!username) {
+        createAlert('username')
+        username = createInput('username')
+        password = createInput('password')
+      }
+      else if(!password) {
+        createAlert('password')
+        username = createInput('username')
+        password = createInput('password')
+      }
+      else if (username === password){
+        alert(`${username}, Your username or password must be different!`)
+        username = createInput('username')
+        password = createInput('password')
+      }
+  }
+  alert('Come in! Welcome!')
+  </script>
+</body>
+</html>

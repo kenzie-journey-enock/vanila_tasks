@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 05</title>
+</head>
+<body>
+  <h1>Task 05</h1>
+  <h2>Make a program that records votes. In a student government election there are only 3 candidates, candidate a, candidate b and candidate c.
+
+    Ask the user to enter the letter corresponding to a candidate and increase the number of votes for the candidate by +1. ⁠If the user enters a value that does not correspond to a candidate, alert: "Candidate not found".
+    
+    At the end of each vote, the message: "Vote registered successfully" will appear.
+    
+    To close the vote, you must enter a stop flag (control variable): use x to do this.
+    
+    When the x value is entered, alert the number of votes each candidate had.</h2>
+  <script>
+  const candidate_a = {
+      votes: 0
+  }
+  const candidate_b = {
+      votes: 0
+  }
+  const candidate_c = {
+      votes: 0
+  }
+  let code = prompt('Vote for student government: (a, b or c) (Press "x" for exit.)')
+  while(code != 'x' || code == 'a' || code == 'b' || code == 'c') {
+    while(code != 'a' && code != 'b' && code != 'c' || code == 'x') {
+      if (code == 'x') {
+        break
+      }
+      alert(`Candidate ${code}, not found. Try 'a', 'b' or 'c'.`) 
+      code = prompt('Vote for student government: (a, b or c) (Press "x" for exit.)')
+    }
+    if (code == 'x') {
+        break
+    }
+    if (code == 'a'){
+        candidate_a.votes++
+    }
+    if (code == 'b'){
+        candidate_b.votes++
+    }
+    if (code == 'c'){
+        candidate_c.votes++
+    }
+    alert(`Vote in candidate ${code}, registered successfully!`)
+    code = prompt('Vote for student government: (a, b or c) (Press "x" for exit.)')
+  }
+  if (candidate_a.votes > candidate_b.votes && candidate_a.votes > candidate_c.votes) {
+      alert(`Candidate a, win!`)
+  }
+  if (candidate_b.votes > candidate_a.votes && candidate_b.votes > candidate_c.votes) {
+      alert(`Candidate b, win!`)
+  }
+  if (candidate_c.votes > candidate_b.votes && candidate_c.votes > candidate_a.votes) {
+      alert(`Candidate c, win!`)
+  }
+  alert(`Votes -> a = ${candidate_a.votes} | b = ${candidate_b.votes} | c = ${candidate_c.votes}`)
+  alert(`End.`)
+  </script>
+</body>
+</html>
