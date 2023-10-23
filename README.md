@@ -2,9 +2,13 @@
 
 This repository contains the tasks done in the first classes, practicing the web base (js, css and HTML).
 
-### Links Games for training
+## Projects
 
-- [Flexbox Froggy](https://flexboxfroggy.com)
+### TODO
+
+[Go](01_Project_TODO)
+
+
 
 ## Sprints
 

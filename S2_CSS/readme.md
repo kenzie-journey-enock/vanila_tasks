@@ -2,6 +2,10 @@
 
 ## Tasks
 
+### For training
+
+- [Flexbox Froggy](https://flexboxfroggy.com)
+
 ### S2 Using Selectors
 
 [Go](03_S2_Using_Selectors)
