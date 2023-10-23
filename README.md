@@ -31,7 +31,3 @@ This repository contains the tasks done in the first classes, practicing the web
 ### S6 JS Objects
 
 [Go](S6_JS_Objects)
-
-### S6 JS Prize Lottery
-
-[Go](40_S6_JS_Prize_Lottery)
