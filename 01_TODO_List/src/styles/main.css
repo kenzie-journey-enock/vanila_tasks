@@ -134,7 +134,7 @@ div.list-tasks div.task {
   justify-content: space-between;
   align-items: center;
   background-color: #f1f3f5;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 div.list-tasks div.task div.type-task {
