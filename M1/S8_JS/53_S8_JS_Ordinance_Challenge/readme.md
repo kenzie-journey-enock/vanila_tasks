@@ -60,5 +60,4 @@ else {
   alert(`Entry allowed for ${name}: Full value`)
 }
 alert(`|| Client: ${name} | Age: ${age} | Accompanied: ${isAccompanied ? 'Yes' : 'No'} ||`)
-
 ```
