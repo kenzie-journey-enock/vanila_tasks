@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #303e73;
+  height: 100vh;
+}
+
+#space_lamp {
+  width: 500px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.off {
+  background-image: url("./img/lamp-off.svg");
+}
+.on {
+  background-image: url("./img/lamp-on.svg");
+}

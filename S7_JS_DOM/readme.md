@@ -25,3 +25,11 @@
 ### S7 JS DOM TODO List
 
 [Go](48_S7_JS_DOM_TODO_List)
+
+### S7 JS DOM Classlist
+
+[Go](49_S7_JS_DOM_Classlist)
+
+### S7 JS DOM Shopping list
+
+[Go](50_S7_JS_DOM_Shopping_list)

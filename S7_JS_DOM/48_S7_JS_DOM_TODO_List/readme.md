@@ -3,7 +3,7 @@
 ## Project End
 
 [TODO APP](link deploy)
-[Code](01_Project_TODO)
+[Code](01_TODO_List)
 
 ## Intro
 
@@ -17,42 +17,42 @@ To organize the idea, you decided to create a layout. You are already thinking a
 
 **This activity is used as a reference at other times of the week. All buttons used in the proposed layout will be implemented. For now, just do what the activity asks.**
 
-## Pensando na execução
-Você deverá criar um array de tarefas.
-- Uma tarefa possui título e tipo.
+## Thinking about execution
+You must create an array of tasks.
+- A task has a title and type.
 
-Título basicamente é o que deve ser feito, e tipo é definido como: urgente, prioritário ou normal.
+Title is basically what should be done, and type is defined as: urgent, priority or normal.
 
-**Atenção às tarefas urgentes, sempre serão renderizadas no topo da lista.**
+**Attention to urgent tasks, they will always be rendered at the top of the list.**
 
-Seguindo a ordem de maior importância para menor.
+Following the order from greatest to least importance.
 
-Sua aplicação deverá ter a funcionalidade de renderizar somente o título, o tipo será utilizado para organizar os elementos da lista.
+Your application must have the functionality to render only the title, the type will be used to organize the list elements.
 
-Por padrão a lista que é exibida é a lista com todas as tarefas organizadas por mais urgente para menos urgente
+By default, the list that is displayed is the list with all tasks organized from most urgent to least urgent
 
-## Sua lista de tarefas
+## Your to-do list
 ```js
 let tasks = [
-  {
-    titulo: "Comprar comida para o gato",
-    tipo: "Urgente"
+   {
+    title: "Buying food for the cat",
+    type: "Urgent"
   },
   {
-    titulo: "Limpar o quarto",
-    tipo: "urgente"
-  },  
+    title: "Clean the room",
+    type: "urgent"
+  },
   {
-    titulo: "Consertar Computador",
-    tipo: "prioritário"
-  },  
+    title: "Fix Computer",
+    type: "priority"
+  },
   {
-    titulo: "Guardar dinheiro do lanche",
-    tipo: "Urgente"
-  },  
+    title: "Save lunch money",
+    type: "Urgent"
+  },
   {
-    titulo: "Beber água",
-    tipo: "prioritário"
-  }    
+    title: "Drink water",
+    type: "priority"
+  }
 ]
 ```
