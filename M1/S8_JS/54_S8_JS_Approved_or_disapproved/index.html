@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S8 JS Approved or disapproved</title>
+</head>
+<body>
+  <script src="subjects.js"></script>
+  <script>
+    function promptInt(msg){
+      while(true){
+        let value = parseFloat(prompt(msg))
+        if (!isNaN(value)) return value
+        alert('Try a number')
+      }
+    }
+
+    function setStudentName() {
+      let studentName = prompt('Student, enter your name: ')
+      while (studentName.length < 5){
+        alert('Invalid Name.')
+        studentName = prompt('Student, enter your name: ')
+      }
+      alert(`Hello ${studentName}!`)
+      return studentName
+    }
+
+    function setStudentGrade() {
+      let sum = 0
+      for (i in subjects){
+        alert(`Subject ${subjects[i].name}`)
+        let grade = promptInt(`Enter your grade on ${subjects[i].name}`)
+        while(grade < 0 || grade > 10) {
+          alert(`Grade ${grade} is invalid.`)
+          grade = promptInt(`Enter your grade on ${subjects[i].name}`)
+        }
+        let presence = promptInt(`Enter your presence on ${subjects[i].name}`)
+        while(presence < 0 || presence > 10){  
+          alert(`Presence ${presence} is invalid.`)
+          presence = promptInt(`Enter your presence on ${subjects[i].name}`)
+        }
+        subjects[i].grade = grade
+        subjects[i].presence = presence
+
+        sum += grade
+      }
+      return sum
+    }
+
+    function verifyProven(student){
+      student.subjects.push(subjects)
+      if (student.average < 8){
+        student.proven = false
+        return alert(`Student's ${student.name}'s' grade is ${student.average}: Student failed!`)
+      }
+      if (student.proven){
+        for (i in student.subjects){
+          if (student.subjects[i].presence < 6) {
+            return alert(`Student's ${student.name}'s' grade is ${student.average} and her/his presence in ${student.subjects[i].name} is ${student.subjects[i].presence}: Student failed!`)
+          }
+        }
+        return alert(`Student ${student.name}'s grade is ${student.average} and her/his presence is OK: Proven student!`)
+      }
+    }
+
+    let stdName = setStudentName()
+    let sumGrade = setStudentGrade()
+    let std = {
+      name: stdName,
+      subjects: [],
+      average: sumGrade / subjects.length,
+      proven: true
+    }
+    verifyProven(std)
+  </script>
+</body>
+</html>
