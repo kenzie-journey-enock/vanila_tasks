@@ -1,0 +1,186 @@
+main {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+div.insert-task {
+  width: 70%;
+  height: 40%;
+  border-radius: 6px;
+  box-shadow: 1px 1px 25px rgba(0,0,0,0.4);
+  -moz-box-shadow: 1px 1px 25px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 1px 1px 25px rgba(0,0,0,0.4);
+  -ms-box-shadow: 1px 1px 25px rgba(0,0,0,0.4);
+  -o-box-shadow: 1px 1px 25px rgba(0,0,0,0.4);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.insert-task form.form-task {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+div.insert-task form.form-task h2.title-form {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+div.insert-task form.form-task div.inputs-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+div.insert-task form.form-task div.inputs-form input.title-task {
+  width: 30%;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  background-color: #f1f3f5;
+  border: 3px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  padding: 1rem 3rem;
+  color: gray;
+}
+div.insert-task form.form-task div.inputs-form input.title-task:focus {
+  border: 3px solid #4261dc;
+}
+div.insert-task form.form-task div.inputs-form input.title-task:hover {
+  border: 3px solid #4261dc;
+}
+
+div.insert-task form.form-task div.inputs-form select.type-task {
+  width: 40%;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  background-color: #f1f3f5;
+  border: 3px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  padding: 1rem 2rem;
+}
+div.insert-task form.form-task div.inputs-form select.type-task:invalid { color: gray; }
+div.insert-task form.form-task div.inputs-form select.type-task:hover {
+  border: 3px solid #4261dc;
+}
+
+div.insert-task form.form-task button.submit-form {
+  width: 89%;
+  height: 18%;
+  color: white;
+  background-color: #4261dc;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+div.insert-task form.form-task button.submit-form:hover {
+  background-color: #4f68ce;
+}
+
+div.list-tasks {
+  width: 70%;
+  height: 50%;
+  border-radius: 6px;
+  box-shadow: 1px 1px 25px rgba(0,0,0,0.4);
+  -moz-box-shadow: 1px 1px 25px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 1px 1px 25px rgba(0,0,0,0.4);
+  -ms-box-shadow: 1px 1px 25px rgba(0,0,0,0.4);
+  -o-box-shadow: 1px 1px 25px rgba(0,0,0,0.4);
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 1rem;
+
+  
+}
+
+div.list-tasks h2.title-list {
+  width: 90%;
+  height: 10%;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1.2rem 0 1rem 0;
+}
+
+div.list-tasks div.all-tasks {
+  width: 90%;
+  height: 26rem;
+  overflow: auto;
+}
+
+div.list-tasks div.task {
+  width: 98%;
+  height: 4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f3f5;
+  border-radius: 6px;
+}
+
+div.list-tasks div.task div.type-task {
+  margin-left: 1rem;
+}
+
+div.list-tasks div.task p.title-task {
+  width: 86%;
+  font-size: 1.15rem;
+}
+
+div.list-tasks div.task button.btn-delete {
+  width: 3%;
+  height: 40%;
+  border-radius: 6px;
+  border: none;
+  background-color:#dee2e5;
+  color: #adb5bd;
+  margin-right: 1rem;
+}
+div.list-tasks div.task button.btn-delete:hover {
+  background-color:#adb5bd;
+  color: white;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4261dc; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4f68ce;
+}
