@@ -33,3 +33,11 @@
 ### S7 JS DOM Shopping list
 
 [Go](50_S7_JS_DOM_Shopping_list)
+
+### S7 JS DOM Add New Items to List
+
+[Go](51_S7_JS_DOM_Add_New_Items_to_List)
+
+### S7 JS DOM Manipulating Attributes
+
+[Go](52_S7_JS_DOM_Manipulating_Attributes)
