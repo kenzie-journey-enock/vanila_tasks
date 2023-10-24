@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S7 JS DOM Selectors</title>
+</head>
+<body>
+  <h1>Learning DOM - Simple</h1>
+  <h1 id="title">Learning DOM - Intermediary</h1>
+  <h1 class="title">Learning DOM - Advanced</h1>
+  <h3 class="title">Learning DOM - Advanced</h3>
+  <script>
+    const simple = window.document.querySelector('h1')
+    console.log(simple)
+    const intermediary = window.document.getElementById('title')
+    console.log(intermediary)
+    const advanced = window.document.getElementsByClassName('title')
+    console.log(advanced[0])
+  </script>
+</body>
+</html>
+
+

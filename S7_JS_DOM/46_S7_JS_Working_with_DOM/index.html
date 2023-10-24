@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S7 JS Working with DOM</title>
+</head>
+<body>
+  <main id="root"></main>
+  <script>
+    const container = document.getElementById("root")
+    console.log('Tag main: ', container)
+    container.innerText = "repeat"
+    container.innerText = "repeat more"
+    const repeat = document.createElement("span")
+    console.log('Tag span: ', repeat)
+    repeat.innerText = 'Need to repeat'
+    console.log('Tag span: ', repeat)
+    repeat.innerText = 'Repeat and repeat...'
+    console.log('Tag span: ', repeat)
+    const list = document.createElement('ul')
+    const item = document.createElement('li')
+    item.innerText = 'Repeat more and more'
+    list.appendChild(item)
+    container.appendChild(list)
+  </script>
+</body>
+</html>

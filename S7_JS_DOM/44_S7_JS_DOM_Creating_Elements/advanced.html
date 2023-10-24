@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating Elements - Advanced</title>
+</head>
+<body>
+  <script>
+    const article = window.document.createElement('article')
+    const h1 = window.document.createElement('h1')
+    const p = window.document.createElement('p')
+    const a = window.document.createElement('a')
+
+    h1.innerText = 'Post Title'
+    p.innerText = 'Post Description'
+    a.innerText = 'See full post'
+
+    article.appendChild(h1)
+    article.appendChild(p)
+    article.appendChild(a)
+    document.querySelector('body').appendChild(article)
+  </script>
+</body>
+</html>
