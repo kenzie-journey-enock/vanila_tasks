@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S8 JS Counting Houses</title>
+</head>
+<body>
+  <script>
+    function promptInt(msg){
+      while(true){
+        let value = parseFloat(prompt(msg))
+        if (!isNaN(value)) return value
+        alert('Try a number')
+      }
+    }
+    function generateRandomNumber(){
+      return Math.floor(Math.random() * (20 - 0 + 1) + 0)
+    }
+    function veryGuess(number, guess){
+      let tentative = 1
+      while(number != guess){
+        tentative++
+        alert('Try again')
+        guess = promptInt('Enter your guess: ')
+      }
+      alert(`You got it right on try ${tentative}.`)
+    }
+    let randomNumber = generateRandomNumber()
+    console.log('Little thief...', randomNumber)
+    let guess = promptInt('Enter your guess: ')
+    veryGuess(randomNumber, guess)
+  </script>
+</body>
+</html>
