@@ -53,3 +53,11 @@
 ### S8 Codewars 08
 
 [Go](63_S8_Codewars_08)
+
+### S8 JS Question Management
+
+[Go](64_S8_JS_Question_Management)
+
+### S8 JS Cash Machine
+
+[Go](65_S8_JS_Cash_Machine)
