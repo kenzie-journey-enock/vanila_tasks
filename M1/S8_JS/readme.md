@@ -64,4 +64,4 @@
 
 ### S8 JS School Data
 
-[Go](68_S8_JS_School_Data)
+[Go](66_S8_JS_School_Data)
