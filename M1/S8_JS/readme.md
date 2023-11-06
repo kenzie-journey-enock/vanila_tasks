@@ -61,3 +61,7 @@
 ### S8 JS Cash Machine
 
 [Go](65_S8_JS_Cash_Machine)
+
+### S8 JS School Data
+
+[Go](68_S8_JS_School_Data)
