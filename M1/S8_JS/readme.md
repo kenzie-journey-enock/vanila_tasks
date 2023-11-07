@@ -69,3 +69,15 @@
 ### S8 JS List Debug 01
 
 [Go](67_S8_JS_List_Debug_01)
+
+### S8 JS List Debug 02
+
+[Go](68_S8_JS_List_Debug_02)
+
+### S8 Codewars 09
+
+[Go](69_S8_Codewars_09)
+
+### S8 Codewars 10
+
+[Go](70_S8_Codewars_10)
