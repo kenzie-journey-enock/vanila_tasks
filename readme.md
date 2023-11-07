@@ -4,9 +4,7 @@ This repository contains the tasks done in the first classes, practicing the web
 
 ## Projects
 
-### TODO
-
-[Go](01_TODO_List)
+[Go](Projects)
 
 ## Modules
 
