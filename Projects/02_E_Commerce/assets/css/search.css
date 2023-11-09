@@ -1,0 +1,36 @@
+.form-search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-search input {
+  width: 59%;
+  padding: 1rem;
+  background-color: var(--grey-0);
+  border: 3px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  color: var(--grey-100);
+}
+
+.form-search input:focus {
+  border: 3px solid var(--primary);
+}
+.form-search input:hover {
+  border: 3px solid var(--primary);
+}
+
+.form-search button {
+  width: 30%;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form-search button:hover { 
+  background-color: var(--secondary);
+}

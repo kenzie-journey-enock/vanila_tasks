@@ -1,0 +1,17 @@
+:root {
+	--primary: #2e245e;
+	--secondary: #3726bc;
+	--grey-100: #333333;
+	--grey-50: #828282;
+	--grey-0: #f5f5f5;
+
+	--shadow: rgba(0,0,0,0.4);
+
+	--title1-size: 1.75em;
+	--title2-size: 1.5em;
+	--title3-size: 1.25em;
+	--title4-size: 1em;
+	--headline-size: 1em;
+	--font-body-size: 0.875em;
+	--font-small-size: 0.625em;
+}

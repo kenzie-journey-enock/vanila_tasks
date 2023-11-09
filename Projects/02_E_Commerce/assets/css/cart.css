@@ -1,0 +1,32 @@
+.container-cart {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.top-cart {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 0;
+  font-size: var(--title3-size);
+}
+
+.body-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--grey-0);
+  height: 100%;
+
+}
+
+.body-cart h2 {
+  font-size: var(--title2-size);
+  margin-bottom: 0.5rem;
+}
+
+.body-cart p {
+  font-size: var(--headline-size);
+}
