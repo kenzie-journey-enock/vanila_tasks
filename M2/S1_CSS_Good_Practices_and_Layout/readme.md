@@ -7,3 +7,11 @@
 ## S1 Structuring the front
 
 [Go](72_S1_Structuring_the_front)
+
+## S1 Display Grid
+
+[Go](73_S1_Display_Grid)
+
+## S1 Display Flex
+
+[Go](74_S1_Display_Flex)
