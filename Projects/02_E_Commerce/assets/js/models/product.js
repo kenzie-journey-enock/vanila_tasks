@@ -51,14 +51,59 @@ function createInfoProduct(id, tag, nameItem, description, value, addCart){
 
 function createProduct(product){
   const { id, img, nameItem, description, value, addCart, tag} = product
-
   const cardProduct = document.createElement('div')
   cardProduct.className = 'card-product'
   cardProduct.id = `product-${id}`
-
 
   cardProduct.appendChild(createImgProduct(id, img, nameItem))
   cardProduct.appendChild(createInfoProduct(id, tag, nameItem, description, value, addCart))
 
   return cardProduct
 }
+
+function createProductInCart(product){
+  const cardProductInCart = document.createElement('div')
+  cardProductInCart.className = 'cart-product'
+  cardProductInCart.id = `cart-product-${product.id}`
+
+  const cardImg = document.createElement('div')
+  cardImg.className = 'card-img-cart'
+  cardImg.id = `cart-product-${product.id}`
+  const imgProductCart = document.createElement('img')
+  imgProductCart.src = product.img
+  imgProductCart.alt = product.nameItem
+  imgProductCart.id = `cart-product-${product.id}`
+  cardImg.appendChild(imgProductCart)
+
+  const cardInfo = document.createElement('div')
+  cardInfo.className = 'card-info-cart'
+  cardInfo.id = `cart-product-${product.id}`
+
+  const titleProductCart = document.createElement('h2')
+  titleProductCart.className = 'title-cart-product'
+  titleProductCart.innerText = product.nameItem
+  titleProductCart.id = `cart-product-${product.id}`
+
+  const priceProductCart = document.createElement('span')
+  priceProductCart.className = 'price-cart-product'
+  priceProductCart.innerText = `$${product.value},00`
+  priceProductCart.id = `cart-product-${product.id}`
+
+  const btnRemove = document.createElement('button')
+  btnRemove.className = 'btn-remove'
+  btnRemove.innerText = 'Remover produto'
+  btnRemove.id = `cart-product-${product.id}`
+  btnRemove.addEventListener('click', eventListenerSideShop)
+
+  cardInfo.appendChild(titleProductCart)
+  cardInfo.appendChild(priceProductCart)
+  cardInfo.appendChild(btnRemove)
+
+  cardProductInCart.appendChild(cardImg)
+  cardProductInCart.appendChild(cardInfo)
+
+  return cardProductInCart
+}
+
+
+

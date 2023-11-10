@@ -3,3 +3,5 @@ const shop = {
   logo_img: '',
   nav: ['All', 'Accessories', 'Shoes', 'T-shirts']
 }
+
+let listCart = []

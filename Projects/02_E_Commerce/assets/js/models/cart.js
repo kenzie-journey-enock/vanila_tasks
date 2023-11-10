@@ -1,79 +1,84 @@
-function createCart(){
-  const containerCart = document.createElement('div')
-  containerCart.className = 'container-cart'
+const containerCart = document.createElement('div')
+containerCart.className = 'container-cart'
 
-  const cartTop = document.createElement('div')
-  cartTop.className = 'top-cart'
-  const cartTitle = document.createElement('h3')
-  cartTitle.innerText = 'Carrinho de compras'
-  cartTop.appendChild(cartTitle)
+const cartBody = document.createElement('div')
+cartBody.id = 'cart'
+cartBody.className = 'body-cart'
 
-  const cartBody = document.createElement('div')
-  cartBody.id = 'cart'
-  cartBody.className = 'body-cart'
-  if(listCart.length == 0){
+const cartTop = document.createElement('div')
+cartTop.className = 'top-cart'
+
+const cartTitle = document.createElement('h3')
+cartTitle.innerText = 'Carrinho de compras'
+
+const controlPainel = document.createElement('div')
+controlPainel.className = 'control-painel'
+
+cartTop.appendChild(cartTitle)
+if(listCart.length == 0){
+  createBodyCart()
+}
+containerCart.appendChild(cartTop)
+containerCart.appendChild(cartBody)
+
+
+
+function createBodyCart(){
     const warning = document.createElement('h2')
+    warning.className = 'empty'
     warning.innerText = 'Carrinho vazio'
+
     const span = document.createElement('p')
     span.innerText = 'Adicione itens'
+
     const emptyCart = {
       warning,
       span
     }
+
     cartBody.appendChild(emptyCart.warning)
     cartBody.appendChild(emptyCart.span)
-  }
-
-  containerCart.appendChild(cartTop)
-  containerCart.appendChild(cartBody)
-
-  return containerCart
 }
 
 
-function createCardProductInCart(product){
-  const cardProductInCart = document.createElement('div')
-  cardProductInCart.className = 'cart-product'
-  cardProductInCart.id = `cart-product-${product.id}`
 
-  const cardImg = document.createElement('div')
-  cardImg.className = 'card-img-cart'
-  cardImg.id = `cart-product-${product.id}`
-  const imgProductCart = document.createElement('img')
-  imgProductCart.src = product.img
-  imgProductCart.alt = product.nameItem
-  imgProductCart.id = `cart-product-${product.id}`
-  cardImg.appendChild(imgProductCart)
+function createControlCart(){
+  controlPainel.innerHTML = ''
 
-  const cardInfo = document.createElement('div')
-  cardInfo.className = 'card-info-cart'
-  cardInfo.id = `cart-product-${product.id}`
-  const titleProductCart = document.createElement('h2')
-  titleProductCart.className = 'title-cart-product'
-  titleProductCart.innerText = product.nameItem
-  titleProductCart.id = `cart-product-${product.id}`
-  const priceProductCart = document.createElement('span')
-  priceProductCart.className = 'price-cart-product'
-  priceProductCart.innerText = `$${product.value},00`
-  priceProductCart.id = `cart-product-${product.id}`
-  const btnRemove = document.createElement('button')
-  btnRemove.className = 'btn-remove'
-  btnRemove.innerText = 'Remover produto'
-  btnRemove.id = `cart-product-${product.id}`
-  btnRemove.addEventListener('click', eventListenerSideShop)
-  cardInfo.appendChild(titleProductCart)
-  cardInfo.appendChild(priceProductCart)
-  cardInfo.appendChild(btnRemove)
+  if(listCart.length == 0) return controlPainel.innerHTML = ''
 
-  cardProductInCart.appendChild(cardImg)
-  cardProductInCart.appendChild(cardInfo)
+  const control = countItensAndTotal(listCart)
 
-  return cardProductInCart
-}
+  const quantityPainel = document.createElement('div')
+  quantityPainel.className = 'quantity-painel'
 
-function eventListenerSideShop(evt){
+  const titleQuantity = document.createElement('p')
+  titleQuantity.className = 'title-quantity'
+  titleQuantity.innerText = 'Quantidade:'
 
-  const target = evt.target
-  const targetId = parseInt(target.getAttribute("id").split('-')[2])
-  removeFromCart(targetId)
+  const valueQuantity = document.createElement('p')
+  valueQuantity.className = 'value-quantity'
+  valueQuantity.innerText = control.quantity
+
+  quantityPainel.appendChild(titleQuantity)
+  quantityPainel.appendChild(valueQuantity)
+
+  const totalPainel = document.createElement('div')
+  totalPainel.className = 'total-painel'
+
+  const titleTotal = document.createElement('p')
+  titleTotal.className = 'title-total'
+  titleTotal.innerText = 'Total:'
+
+  const valueTotal = document.createElement('p')
+  valueTotal.className = 'value-total'
+  valueTotal.innerText = `$${control.total},00`
+
+  totalPainel.appendChild(titleTotal)
+  totalPainel.appendChild(valueTotal)
+
+  controlPainel.appendChild(totalPainel)
+  controlPainel.appendChild(quantityPainel)
+
+  containerCart.appendChild(controlPainel)
 }

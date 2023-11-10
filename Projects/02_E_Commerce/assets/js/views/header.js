@@ -26,6 +26,7 @@ function createNav(){
     const item = document.createElement('li')
     item.className = 'item'
     item.innerText = shop.nav[i]
+    item.addEventListener('click', filterItensByCategory)
     nav.appendChild(item)
   }
   containerNav.appendChild(nav)
