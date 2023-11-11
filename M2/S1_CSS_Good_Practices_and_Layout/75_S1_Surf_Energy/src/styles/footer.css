@@ -1,0 +1,30 @@
+.footer {
+  background-image: url(./../images/bg-footer.jpg);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.footer-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-3);
+  text-align: center;
+}
+
+.footer-content div {
+  color: var(--color-grey-4);
+}
+
+div.footer-content {
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+}
+
+.footer-content p {
+  color: var(--color-grey-3);
+}
+
+
