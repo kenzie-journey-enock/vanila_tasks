@@ -4,6 +4,35 @@ body{
 }
 
 /* MEDIA QUERY */
+@media (orientation: landscape) {
+  /* estilos para dispositivos em modo paisagem aqui */
+  h3:after {
+    content: "Orientation Landscape";
+  }
+}
+@media (min-resolution: 300dpi) {
+  /* estilos para dispositivos de alta resolução aqui */
+}
+/* Estilos para dispositivos com largura menor que 320px */
+@media (max-width: 320px) {
+  /* regras de estilo aqui */
+}
+
+/* Estilos para dispositivos com largura entre 321px e 480px */
+@media (min-width: 321px) and (max-width: 480px) {
+  /* regras de estilo aqui */
+}
+
+/* Estilos para dispositivos com largura entre 481px e 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* regras de estilo aqui */
+}
+
+/* Estilos para dispositivos com largura entre 769px e 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* regras de estilo aqui */
+}
+
 @media(max-width: 768px){
   body{
     background-color: #AF5A5A;
