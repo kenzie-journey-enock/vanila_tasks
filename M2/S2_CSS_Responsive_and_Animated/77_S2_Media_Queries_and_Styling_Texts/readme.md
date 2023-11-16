@@ -19,7 +19,14 @@
 
 ## Notes
 
-```js
+```css
+/* MEDIA QUERY */
+@media (orientation: landscape) {
+  /* estilos para dispositivos em modo paisagem aqui */
+}
+@media (min-resolution: 300dpi) {
+  /* estilos para dispositivos de alta resolução aqui */
+}
 /* Estilos para dispositivos com largura menor que 320px */
 @media (max-width: 320px) {
   /* regras de estilo aqui */

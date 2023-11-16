@@ -4,50 +4,86 @@ body{
 }
 
 /* MEDIA QUERY */
-@media (orientation: landscape) {
-  /* estilos para dispositivos em modo paisagem aqui */
+
+@media(min-width: 1200px){
+  body{
+    background-color: #E0FFFF;
+    color: #000;
+  }
   h3:after {
-    content: "Orientation Landscape";
+    content: "Min width 1200px";
   }
 }
-@media (min-resolution: 300dpi) {
-  /* estilos para dispositivos de alta resolução aqui */
-}
-/* Estilos para dispositivos com largura menor que 320px */
-@media (max-width: 320px) {
-  /* regras de estilo aqui */
-}
 
-/* Estilos para dispositivos com largura entre 321px e 480px */
-@media (min-width: 321px) and (max-width: 480px) {
-  /* regras de estilo aqui */
-}
-
-/* Estilos para dispositivos com largura entre 481px e 768px */
-@media (min-width: 481px) and (max-width: 768px) {
-  /* regras de estilo aqui */
-}
-
-/* Estilos para dispositivos com largura entre 769px e 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* regras de estilo aqui */
-}
-
-@media(max-width: 768px){
+@media(min-width: 768px) and (max-width: 1199px){
   body{
     background-color: #AF5A5A;
     color: #FFFFFF;
   }
+  h3:after {
+    content: "Min width 768px";
+  }
 }
 
-@media(max-width: 640px){
+@media(min-width: 760px) and (max-width: 767px){
+  body{
+    background-color: #FF7F50;
+    color: #A9A9A9;
+    font-size: 30px;
+  }
+  h3:after {
+    content: "Min width 767px";
+  }
+}
+
+@media(min-width: 700px) and (max-width: 759px){
   body{
     background-color: #5A73AF;
   }
-}
-
-@media(max-width: 375px){
-  body{
-    background-color: #8A2BE2;
+  h3:after {
+    content: "Min width 700px";
   }
 }
+
+@media(min-width: 650px) and (max-width: 699px){
+  body{
+    background-color: #5AAF9C;
+  }
+  h3:after {
+    content: "Min width 650px";
+  }
+}
+
+@media(min-width: 480px) and (max-width: 649px){
+  body{
+    background-color: #8A2BE2;
+    color: #FFFFFF;
+  }
+  h3:after {
+    content: "Min width 480px";
+  }
+}
+
+@media(min-width: 380px) and (orientation: landscape) and (max-width: 479px){
+  body{
+    background-color: #b0e5f5;
+    color: #000;
+  }
+  h3:after {
+    content: "Min width 380px and Orientation is Landscape";
+  }
+}
+
+@media(min-width: 380px) and (max-width: 479px){
+  body{
+    background-color: #023545;
+    color: #fff;
+    font-size: 50px;
+  }
+  h3:after {
+    content: "Min width 380px Large font";
+  }
+}
+
+
+
