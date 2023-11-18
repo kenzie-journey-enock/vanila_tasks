@@ -1,18 +1,20 @@
 # Mobile First
 
-Priorize o conteúdo mais importante: Comece com o conteúdo mais importante e vá adicionando elementos à medida que expande o layout para tamanhos de tela maiores.
+![img](guide/mobilefirst.png)
 
-Use unidades de medida flexíveis: Use unidades de medida flexíveis, como porcentagens, em ou rem, em vez de pixels fixos, para garantir que os elementos se ajustem ao tamanho da tela do dispositivo.
+## Notes
 
-Use media queries para definir pontos de interrupção: Use media queries para definir pontos de interrupção e definir estilos diferentes para cada tamanho de tela.
+- Prioritize the most important content: Start with the most important content and add elements as you expand the layout to larger screen sizes.
 
-Simplifique o layout: Limite o número de elementos da página e priorize o conteúdo mais importante para garantir que o site seja fácil de usar em telas menores.
+- Use flexible units of measurement: Use flexible units of measurement, such as percentages, em or rem, rather than fixed pixels, to ensure that elements fit the device screen size.
 
-Teste em vários dispositivos: Certifique-se de testar o site em vários dispositivos para garantir que ele seja otimizado para cada tamanho de tela.
+- Use media queries to set breakpoints: Use media queries to set breakpoints and define different styles for each screen size.
 
+- Simplify the layout: Limit the number of page elements and prioritize the most important content to ensure the site is easy to use on smaller screens.
 
+- Testing on multiple devices: Make sure to test the website on multiple devices to ensure it is optimized for each screen size.
 
- Defina o Estilo Base para Dispositivos Móveis
- Defina Seus Breakpoints
- Teste suas Media Queries
+- 1. Set the Base Style for Mobile Devices
+- 2. Set Your Breakpoints
+- 3. Test your Media Queries
  
