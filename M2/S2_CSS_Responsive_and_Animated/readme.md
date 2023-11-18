@@ -15,3 +15,7 @@
 ## S2 Responsive Columns
 
 [Go](80_S2_Responsive_Columns)
+
+## S2 Applying Concepts Media Queries
+
+[Go](81_S2_Applying_Concepts_Media_Q)
