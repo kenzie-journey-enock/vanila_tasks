@@ -27,3 +27,15 @@
 ## S2 Fluid and Animated
 
 [Go](83_S2_Fluid_and_Animated)
+
+## S2 Responsive Menu
+
+[Go](84_S2_Responsive_Menu)
+
+## S2 Simple Responsive Menu
+
+[Go](85_S2_Simple_Responsive_Menu)
+
+## S2 Advanced Responsive Menu
+
+[Go](86_S2_Advanced_Responsive_Menu)
