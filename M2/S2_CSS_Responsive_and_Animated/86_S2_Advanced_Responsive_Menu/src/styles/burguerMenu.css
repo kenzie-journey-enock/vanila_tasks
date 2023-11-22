@@ -7,22 +7,25 @@
 }
 
 .menu-burguer {
-  /* width: 10%; */
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
 }
 
 .hamburger {
   margin: 0 auto;
-  margin-top: 30px;
   width: 30px;
   height: 30px;
   position: relative;
+  cursor: pointer;
 }
 
 .hamburger .bar {
   padding: 0;
   width: 30px;
   height: 4px;
-  background-color: maroon;
+  background-color: var(--color-grey-3);
   display: block;
   border-radius: 4px;
   transition: all 0.4s ease-in-out;
@@ -95,3 +98,4 @@
   bottom: 13.5px;
   background-color: transparent; 
 }
+
