@@ -1,0 +1,68 @@
+dialog.post-modal {
+  width: 80%;
+  position: fixed;
+  background-color: var(--white);
+  margin-top: 6rem;
+  z-index: 10;
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: 2px 20px 1000px 5px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 2px 20px 1000px 5px rgba(0, 0, 0, 0.49);
+  box-shadow: 2px 20px 1000px 5px rgba(0, 0, 0, 0.49);
+}
+
+dialog.post-modal {
+ line-height: var(--f-lh-title2)
+}
+
+ dialog.post-modal div.user-info {
+  margin: 1rem 0;
+ }
+
+ dialog.post-modal h2.title-modal{
+  margin-bottom: 1rem;
+ }
+
+ dialog.post-modal p.text-modal {
+  line-height: var(--f-lh-title2)
+ }
+
+ dialog.post-modal button.close-modal {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--grey-5);
+  color: var(--grey-3);
+  font-weight: 600;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+}
+dialog.post-modal button.close-modal:hover {
+  background-color: var(--grey-4);
+}
+
+div.feature-like {
+  width: 3rem;
+}
+
+@media (min-width: 768px) {
+  dialog.post-modal {
+    width: 60%;
+    height: 60%;
+  }
+  dialog.post-modal div.user-info {
+    margin: 1rem;
+   }
+  dialog.post-modal h2.title-modal{
+    margin: 3rem 1rem 0 1rem;
+   }
+  dialog.post-modal p.text-modal {
+    margin: 3rem 1rem 0 1rem;
+  }
+}

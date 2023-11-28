@@ -1,0 +1,28 @@
+form.post-form {
+  width: 100%;
+  height: 20rem;
+}
+
+form.post-form button {
+  background-color: var(--grey-4);
+  border: 1px solid var(--grey-4);
+  color: var(--grey-3);
+  padding: 0.7rem;
+  font-size: var(--f-s-text2);
+  font-weight: var(--f-w-title2);
+  position: relative;
+  left: 75%;
+  right: 0;
+  cursor: pointer;
+}
+form.post-form button:hover{
+  color: var(--white);
+  background-color: var(--brand-1);
+  border: 1px solid var(--brand-1);
+}
+
+@media (min-width: 768px) {
+  section.create-post {
+    width: 60%;
+  }
+}

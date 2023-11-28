@@ -1,0 +1,30 @@
+div.card-user {
+  width: 100%;
+}
+
+div.user-info {
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0 1.5rem 1rem;
+}
+
+div.user-info img{
+  width: 3rem;
+  border-radius: 50%;
+}
+
+div.user-info div.info {
+  margin-left: 1rem;
+}
+div.user-info div.info h2 {
+  font-size: var(--f-s-title2);
+  font-weight: var(--f-w-title2);
+  line-height: var(--f-lh-title2);
+  color: var(--grey-1);
+}
+
+div.user-info div.info p {
+  font-size: var(--f-s-text3);
+  color: var(--grey-2);
+}

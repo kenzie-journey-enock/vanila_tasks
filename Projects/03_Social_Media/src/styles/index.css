@@ -1,0 +1,7 @@
+@import url('./globalStyle.css');
+@import url('./page.css');
+@import url('./components/userInfo.css');
+@import url('./components/postForm.css');
+@import url('./components/sugestions.css');
+@import url('./components/posts.css');
+@import url('./components/modal.css');

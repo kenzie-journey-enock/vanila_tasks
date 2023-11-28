@@ -1,0 +1,81 @@
+section.posts {
+  width: 100%;
+  margin: 1rem 0 0 1rem;
+}
+
+section.posts h2{
+  font-size: var(--f-s-title1);
+  font-weight: var(--f-w-title1);
+  line-height: var(--f-lh-title1);
+}
+
+section.posts article {
+  margin: 3.5rem 0;
+}
+
+section.posts article div.user-info{
+  margin: 1rem 0;
+}
+
+section.posts article h2.title-post {
+  width: 95%;
+}
+
+section.posts article p.text-post {
+  width: 85%;
+  color: var(--grey-2);
+  font-weight: var(--f-w-text123);
+  line-height: var(--f-lh-text1);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+          line-clamp: 4; 
+  -webkit-box-orient: vertical;
+  margin: 1rem 0;
+}
+
+section.posts article div.features-post {
+  display: flex;
+}
+
+section.posts article div.features-post button {
+  background-color: var(--grey-1);
+  border: 1px solid var(--grey-1);
+  padding: 0.7rem;
+  font-size: var(--f-s-text2);
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+}
+
+section.posts article div.features-post button:hover{
+  color: var(--grey-2);
+  background-color: var(--white);
+  border: 1px solid var(--grey-2);
+}
+
+section.posts article div.features-post div {
+  margin-left: 2rem;
+}
+
+section.posts article div.features-post div {
+  display: flex;
+  align-items: center;
+}
+
+section.posts article div div img {
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+section.posts article div div small {
+  font-size: var(--f-s-text2);
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  section.posts {
+    width: 60%;
+  }
+}
