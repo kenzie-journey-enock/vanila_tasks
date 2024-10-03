@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .image-container {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image Usage in HTML</h1>
+
+    <div class="image-container">
+      <h2>Image as a Link</h2>
+      <p>Click the image below to visit MDN Web Docs:</p>
+      <a href="https://developer.mozilla.org/pt-BR/" target="_blank">
+        <img src="./img/mdn_logo.png" alt="MDN Logo" width="200" height="100" />
+      </a>
+    </div>
+
+    <div class="image-container">
+      <h2>Image with Specified Dimensions</h2>
+      <p>Here's an example of an image with specific width and height:</p>
+      <img
+        src="./img/sample_image.png"
+        alt="Sample Image"
+        width="300"
+        height="200"
+      />
+    </div>
+
+    <div class="image-container">
+      <h2>Accessibility with alt Attribute</h2>
+      <p>This image includes an alternative text description:</p>
+      <img
+        src="./img/accessible_image.png"
+        alt="An example of accessible image"
+        width="250"
+        height="150"
+      />
+    </div>
+  </body>
+</html>
