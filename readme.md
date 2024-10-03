@@ -2,16 +2,19 @@
 
 This repository contains the tasks done in the first classes, practicing the web base (js, css and HTML).
 
+## Dashboard
+
+[Go](Todo Deploy Dashboard)
+
 ## Projects
 
 [Go](Projects)
 
-## Modules
+## Kenzie 2023
 
-### M1
+[Go](Kenzie_2023)
 
-[Go](M1)
+## Kenzie 2022
 
-### M2
+[Go](Old_Kenzie_2022)
 
-[Go](M2)
