@@ -1,0 +1,9 @@
+/* External styles for the HTML document */
+h1 {
+  color: blue; /* Setting the color of h1 elements to blue */
+}
+
+p {
+  color: red; /* Setting the color of paragraph elements to red */
+  font-size: 24px; /* Setting the font size of paragraph elements */
+}

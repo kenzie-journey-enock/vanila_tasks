@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centering the content vertically */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+.content-main {
+    max-width: 428px;
+    text-align: center; /* Centering text */
+    background-color: #ffffff; /* White background for content */
+    padding: 20px; /* Adding some padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.title-1 {
+    font-size: 42px;
+    line-height: 52px;
+    color: #3745BD; /* Title color */
+    margin: 0; /* Remove default margin */
+}
+
+.paragraph-1 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #333; /* Paragraph color */
+    margin-top: 10px; /* Space between title and paragraph */
+}

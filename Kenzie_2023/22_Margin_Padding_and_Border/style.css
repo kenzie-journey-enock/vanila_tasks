@@ -1,0 +1,53 @@
+/* The comments below are just explanations about each line. 
+   DO NOT leave comments in submissions and/or projects, only if requested. */
+
+/* Imports the Roboto font from Google Fonts for use in the document */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Sets the default font for all elements to Roboto, a sans-serif font */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Centers the text of elements with the class "centered" */
+.centered {
+  text-align: center;
+}
+
+/* Sets the text color of elements with the class "text-blue" to a shade of blue (#3662ff) */
+.text-blue {
+  color: #3662ff;
+}
+
+/* Sets the background of elements with the class "bg-blue" to a shade of blue (#3662ff) and the text color to white */
+.bg-blue {
+  background: #3662ff;
+  color: white;
+}
+
+/* Transforms the text of elements with the class "uppercase" to uppercase letters */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Sets a padding of 5px on the top and bottom, and 20px on the sides for <section> elements */
+section {
+  padding: 5px 20px;
+}
+
+/* Adds an underline to <li> (list item) elements */
+li {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 36px; /* Sets a top margin of 36 pixels */
+  background-color: black; /* Sets the background color to black */
+  color: whitesmoke; /* Sets the text color to whitesmoke (white) */
+  text-align: center; /* Centers the content horizontally */
+}
+
+.footer-p {
+  padding: 1rem 0; /* Sets a padding of 1rem (relative unit) on the top and bottom of paragraphs */
+  font-size: 18px; /* Sets the font size to 18 pixels */
+}

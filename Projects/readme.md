@@ -11,3 +11,7 @@
 ## Social Media
 
 [Go](03_Social_Media)
+
+## Blog
+
+[Go](04_Blog)

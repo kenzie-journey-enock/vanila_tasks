@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model Example</title>
+    <style>
+      /* Define styles for the main container */
+      .container {
+        width: 400px; /* Width of the container */
+        margin: 20px auto; /* Center the container with margin */
+        padding: 20px; /* Padding inside the container */
+        border: 5px solid #333; /* Border around the container */
+        background-color: #f0f0f0; /* Background color */
+        box-sizing: border-box; /* Use border-box for intuitive sizing */
+      }
+
+      /* Styles for the inner box */
+      .box {
+        width: 100%; /* Width fills the container */
+        margin: 10px 0; /* Vertical margin between boxes */
+        padding: 15px; /* Padding inside the box */
+        border: 2px dashed #007bff; /* Dashed border around the box */
+        background-color: #e7f3ff; /* Light blue background */
+        box-sizing: border-box; /* Keep padding and border in total width */
+      }
+
+      /* Additional styles for the last box */
+      .last-box {
+        border: 2px solid #ff5733; /* Solid border for the last box */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Box Model Example</h2>
+      <div class="box">Box 1 - This box has padding and a border.</div>
+      <div class="box last-box">
+        Box 2 - This box has a different border style.
+      </div>
+      <div class="box">
+        Box 3 - Notice the spacing created by margin and padding.
+      </div>
+    </div>
+  </body>
+</html>

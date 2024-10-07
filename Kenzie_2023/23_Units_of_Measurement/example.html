@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Units Practice</title>
+    <style>
+      /* Absolute unit example using px */
+      .absolute-px {
+        font-size: 16px; /* Fixed size regardless of screen or parent */
+        margin: 20px;
+        border: 1px solid #000;
+      }
+
+      /* Relative unit example using % */
+      .relative-percent {
+        width: 50%; /* Width is 50% of the parent element */
+        margin: 10%; /* Margin is 10% of the parent element */
+        border: 1px solid #3498db;
+      }
+
+      /* Example using em */
+      .relative-em {
+        font-size: 1.5em; /* 1.5 times the parent element's font size */
+        border: 1px solid #2ecc71;
+        padding: 10px;
+      }
+
+      /* Example using rem */
+      .relative-rem {
+        font-size: 2rem; /* 2 times the root element's font size */
+        border: 1px solid #e74c3c;
+        padding: 15px;
+      }
+
+      /* Viewport height (vh) example */
+      .viewport-height {
+        height: 50vh; /* Height is 50% of the viewport's height */
+        border: 1px solid #8e44ad;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Viewport width (vw) example */
+      .viewport-width {
+        width: 50vw; /* Width is 50% of the viewport's width */
+        border: 1px solid #f39c12;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Units Practice</h1>
+
+    <!-- Absolute unit using px -->
+    <p class="absolute-px">
+      This text uses an absolute unit: <strong>16px</strong>.
+    </p>
+
+    <!-- Relative unit using % -->
+    <div class="relative-percent">
+      This box is 50% wide and has a margin of 10% of its parent.
+    </div>
+
+    <!-- Relative unit using em -->
+    <p class="relative-em">
+      This text is <strong>1.5em</strong> larger than the parent's font size.
+    </p>
+
+    <!-- Relative unit using rem -->
+    <p class="relative-rem">
+      This text is <strong>2rem</strong>, which is twice the root font size.
+    </p>
+
+    <!-- Viewport height (vh) example -->
+    <div class="viewport-height">This box is 50% of the viewport height.</div>
+
+    <!-- Viewport width (vw) example -->
+    <div class="viewport-width">This box is 50% of the viewport width.</div>
+  </body>
+</html>

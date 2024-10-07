@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Exercises</title>
+    <style>
+      /* Exercise 1 */
+
+      /* Selects <li> elements that are direct children of <ul>, which is a direct child of elements with class "Ex_1" */
+      .Ex_1 > ul > li {
+        /* Sets the element as inline */
+        display: inline;
+        /* Sets a medium, double black border */
+        border: medium double black;
+        /* Removes list markers */
+        list-style: none;
+        /* Sets font size to 3em (three times the standard size) */
+        font-size: 3em;
+      }
+
+      /* Exercise 2 */
+
+      /* Selects the <ul> that is a direct descendant of <nav>, which is a direct descendant of elements with class "Ex_2" */
+      .Ex_2 > nav > ul {
+        /* Adds 10px padding inside the unordered list */
+        padding: 10px;
+      }
+
+      /* Selects <li> elements that are direct children of <ul>, which is a direct descendant of <nav>, inside elements with class "Ex_2" */
+      .Ex_2 > nav > ul > li {
+        /* Removes list markers */
+        list-style: none;
+        /* Sets the element as inline */
+        display: inline;
+      }
+
+      /* Selects <a> elements that are direct children of <li>, which is a direct child of <ul>, inside <nav> elements, within elements with class "Ex_2" */
+      .Ex_2 > nav > ul > li > a {
+        /* Removes text decoration (like underlining) */
+        text-decoration: none;
+        /* Sets text color to white */
+        color: #fff;
+        /* Sets background color to light blue (#308ebd) */
+        background-color: #308ebd;
+        /* Adds padding of 10px at the top/bottom and 20px on the sides */
+        padding: 10px 20px;
+        /* Adds 10px bottom margin */
+        margin-bottom: 10px;
+        /* Sets the font family to sans-serif */
+        font-family: sans-serif;
+      }
+
+      /* Exercise 3 */
+
+      /* Selects <nav> elements that are direct descendants of elements with class "Ex_3" */
+      .Ex_3 > nav {
+        /* Sets the width to 710px */
+        width: 710px;
+      }
+
+      /* Selects <a> elements that are direct children of <nav>, inside elements with class "Ex_3" */
+      .Ex_3 > nav > a {
+        /* Removes text decoration (like underlining) */
+        text-decoration: none;
+        /* Sets text color to light blue (#308ebd) */
+        color: #308ebd;
+        /* Adds a 2px solid bottom border in light blue (#308ebd) */
+        border-bottom: 2px solid #308ebd;
+        /* Adds padding of 10px at the top/bottom and 20px on the sides */
+        padding: 10px 20px;
+        /* Adds 10px bottom margin */
+        margin-bottom: 10px;
+        /* Sets the font family to sans-serif */
+        font-family: sans-serif;
+        /* Sets the element as block */
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Start of a section with class "Ex_1" -->
+    <section class="Ex_1">
+      <!-- Heading for Exercise 1 -->
+      <h2>Exercise 1</h2>
+      <!-- Start of an unordered list -->
+      <ul>
+        <!-- List items: Home, About, Contact -->
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </section>
+
+    <!-- Start of a section with class "Ex_2" -->
+    <section class="Ex_2">
+      <!-- Heading for Exercise 2 -->
+      <h2>Exercise 2</h2>
+      <!-- Start of a navigation section -->
+      <nav>
+        <!-- Start of an unordered list -->
+        <ul>
+          <!-- List items with links: Home, About, Services, Portfolio, Visit Page, Contact -->
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Visit Page</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Start of a section with class "Ex_3" -->
+    <section class="Ex_3">
+      <!-- Heading for Exercise 3 -->
+      <h2>Exercise 3</h2>
+      <!-- Start of a navigation section -->
+      <nav>
+        <!-- Links for: Home, About, Services, Portfolio, Visit Page, Contact -->
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Visit Page</a>
+        <a href="#">Contact</a>
+      </nav>
+    </section>
+  </body>
+</html>

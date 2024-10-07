@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Example</title>
+    <style>
+      /* Element Selector */
+      h2 {
+        color: blue; /* All <h2> elements will be blue */
+      }
+
+      /* Class Selector */
+      .fruit {
+        color: green; /* All elements with class "fruit" will be green */
+      }
+
+      /* ID Selector */
+      #fruit__list {
+        background-color: black; /* The element with ID "fruit__list" will have a black background */
+        color: white; /* Text color inside the list will be white */
+        padding: 10px;
+      }
+
+      /* Universal Selector */
+      * {
+        font-family: Arial, sans-serif; /* All elements will use Arial font */
+        margin: 0; /* Reset margin for all elements */
+        padding: 0; /* Reset padding for all elements */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Favorite Fruits</h1>
+
+    <h2>Fruits List</h2>
+
+    <ul id="fruit__list">
+      <li class="fruit">Strawberry</li>
+      <li class="fruit">Apple</li>
+      <li class="fruit">Watermelon</li>
+    </ul>
+  </body>
+</html>

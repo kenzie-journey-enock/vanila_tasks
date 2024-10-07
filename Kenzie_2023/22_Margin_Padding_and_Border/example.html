@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .box {
+        background-color: #e7f3fe;
+        border: 4px solid #316ceb;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box; /* Using border-box sizing */
+      }
+
+      .example-margin {
+        margin: 20px 0; /* Applying margin */
+      }
+
+      .example-padding {
+        padding: 20px; /* Applying padding */
+      }
+
+      .example-border {
+        border: solid 2px #316ceb; /* Applying border */
+        padding: 10px; /* Padding inside the border */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSS Box Model Example</h1>
+
+      <div class="box example-margin">
+        <h2>Margin Example</h2>
+        <p>
+          This box demonstrates the margin property. Notice the space around
+          this box due to the margin.
+        </p>
+      </div>
+
+      <div class="box example-padding">
+        <h2>Padding Example</h2>
+        <p>
+          This box shows the padding property. The space between the content and
+          the border is the padding.
+        </p>
+      </div>
+
+      <div class="box example-border">
+        <h2>Border Example</h2>
+        <p>
+          This box illustrates the border property. The border surrounds the
+          padding and content.
+        </p>
+      </div>
+
+      <h2>Comparison of Box Sizing</h2>
+      <div
+        class="box"
+        style="width: 200px; height: 100px; box-sizing: content-box"
+      >
+        <p>
+          This box uses <strong>content-box</strong>. Its total width will
+          exceed 200px because padding and border are not included.
+        </p>
+      </div>
+      <div
+        class="box"
+        style="width: 200px; height: 100%; box-sizing: border-box"
+      >
+        <p>
+          This box uses <strong>border-box</strong>. Its total width will be
+          exactly 200px because padding and border are included in the size.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

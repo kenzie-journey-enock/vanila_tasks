@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Property</title>
+    <style>
+      /* Styling for inline elements */
+      .inline-text {
+        border: 1px solid red;
+        color: red;
+      }
+
+      /* Styling for inline-block elements */
+      .inline-block-box {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border: 2px solid blue;
+        margin: 10px;
+      }
+
+      /* Styling for block elements */
+      .block-container {
+        display: block;
+        width: 100%;
+        background-color: lightgray;
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Understanding CSS Display Property</h1>
+
+    <h2>Inline Elements</h2>
+    <p>
+      This is an example of a text with
+      <span class="inline-text">inline element</span> that doesn't break the
+      flow of the text.
+    </p>
+
+    <h2>Inline-block Elements</h2>
+    <p>Below are some boxes displayed as inline-block elements:</p>
+    <div class="inline-block-box"></div>
+    <div class="inline-block-box"></div>
+    <div class="inline-block-box"></div>
+
+    <h2>Block Elements</h2>
+    <div class="block-container">
+      This is a block-level element that takes up the full width of the page.
+    </div>
+    <div class="block-container">
+      Another block-level element below the previous one.
+    </div>
+  </body>
+</html>

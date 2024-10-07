@@ -1,0 +1,64 @@
+/* Activity: Working with Texts */
+
+/* Imports the "Open Sans" and "Rubik Mono One" fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik+Mono+One&display=swap");
+
+/* Defines the style of the document body */
+body {
+  /* Sets the default font of the text to "Open Sans" and other sans-serif fonts */
+  font-family: "Open Sans", sans-serif;
+  /* Centers the text horizontally */
+  text-align: center;
+  /* Sets the text color to nearly complete white */
+  color: rgba(256, 256, 256);
+  
+  /* Sets a background image using the provided URL */
+  background-image: url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/starfield-banner.jpg");
+  /* Sets the background color of the body to black */
+  background-color: rgb(0, 0, 0);
+}
+
+/* Defines the style of the main title */
+.main-title {
+  /* Sets the font of the title to "Rubik Mono One" and other sans-serif fonts */
+  font-family: "Rubik Mono One", sans-serif;
+  /* Sets the font size of the title to 32 pixels */
+  font-size: 32px;
+  /* Sets the font weight of the title to 500 (semi-bold) */
+  font-weight: 500;
+  
+  /* Sets the line height of the title to 2 times the font size */
+  line-height: 2;
+}
+
+/* Defines the style of the secondary title */
+.secondary-title {
+  /* Sets the font size of the secondary title to 22 pixels */
+  font-size: 22px;
+}
+
+/* Defines the style of a specific part of the secondary title */
+.secondary-title-span {
+  /* Sets the text color of the specific part of the secondary title to a dark orange */
+  color: rgb(254, 188, 50);
+}
+
+/* Defines the style of the article paragraph */
+.article-paragraph {
+  /* Sets the font size of the paragraph to 18 pixels */
+  font-size: 18px;
+
+  /* Sets the line height of the paragraph to 1.5 times the font size */
+  line-height: 1.5;
+  /* Aligns the text of the paragraph justified */
+  text-align: justify;
+
+  /* Sets the opacity of the paragraph to 0.8 (80%) */
+  opacity: 0.8;
+}
+
+/* Defines the style of links */
+a {
+  /* Sets the color of the links to a dark orange */
+  color: rgb(254, 188, 50);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimension Properties Example</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      .box {
+        background-color: blue;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        text-align: center;
+      }
+
+      .fixed {
+        height: 200px;
+        width: 300px;
+      }
+
+      .max-size {
+        max-height: 200px;
+        max-width: 300px;
+      }
+
+      .min-size {
+        min-height: 200px;
+        min-width: 300px;
+      }
+
+      .min-max-size {
+        min-height: 200px;
+        min-width: 300px;
+        max-width: 500px;
+      }
+
+      /* Responsive styling */
+      @media (max-width: 600px) {
+        .box {
+          width: 100%;
+          height: auto; /* Allows boxes to resize */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dimension Properties Example</h1>
+
+    <div class="box fixed">Fixed Size<br />Height: 200px, Width: 300px</div>
+
+    <div class="box max-size">
+      Max Size<br />Max Height: 200px, Max Width: 300px
+    </div>
+
+    <div class="box min-size">
+      Min Size<br />Min Height: 200px, Min Width: 300px
+    </div>
+
+    <div class="box min-max-size">
+      Min-Max Size<br />Min Height: 200px, Min Width: 300px, Max Width: 500px
+    </div>
+  </body>
+</html>

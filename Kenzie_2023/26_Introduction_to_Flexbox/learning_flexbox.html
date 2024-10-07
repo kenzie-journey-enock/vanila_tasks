@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #007BFF;
+        }
+        .flex-container {
+            display: flex;
+            border: 2px dashed #007BFF;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .flex-item {
+            background-color: #cce5ff;
+            padding: 20px;
+            margin: 5px;
+            border: 1px solid #007BFF;
+            flex: 1;
+            text-align: center;
+        }
+        .example {
+            background-color: #e2e3e5;
+            padding: 10px;
+            border: 1px solid #6c757d;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning Flexbox</h1>
+    
+    <h2>Introduction</h2>
+    <p>In this learning module, I gained an understanding of how to use the <strong>Flexbox</strong> layout model to manage the arrangement of elements on a web page. Flexbox is a one-dimensional layout method that allows for positioning items either in rows or columns. These items adapt based on the size of the container they reside in, offering much more flexibility than older methods like <code>float</code> and <code>position</code>.</p>
+
+    <h2>Flexbox and Its Terminology</h2>
+    <p>Before diving into practical examples, I learned key terminology. When an element uses <code>display: flex</code> or <code>display: inline-flex</code>, it becomes a <strong>flex container</strong> and the items inside it become <strong>flex items</strong>. The flex container operates on two axes: the <strong>main axis</strong>, which defaults to horizontal, and the <strong>cross axis</strong>, which defaults to vertical.</p>
+
+    <h2>Flexbox Properties</h2>
+
+    <h3>Display Flex</h3>
+    <p>This property turns an element into a flex container, making its children flexible and aligning them either horizontally or vertically.</p>
+    <div class="flex-container" style="display: flex;">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+    <div class="example">
+        <code>div { display: flex; }</code>
+    </div>
+
+    <h3>Flex Direction</h3>
+    <p>This property controls the direction of the flex items inside the container. By default, they align in a row, but I can change this to a column for a mobile-friendly layout, ensuring content stacks vertically.</p>
+    <div class="flex-container" style="flex-direction: column;">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+    <div class="example">
+        <code>flex-direction: column;</code>
+    </div>
+
+    <h3>Flex Wrap</h3>
+    <p>Flex items do not break into a new line by default, but with <code>flex-wrap: wrap</code>, items will flow onto the next line once they exceed the container's width.</p>
+    <div class="flex-container" style="flex-wrap: wrap; width: 300px;">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+    </div>
+    <div class="example">
+        <code>flex-wrap: wrap;</code>
+    </div>
+
+    <h3>Flex Flow</h3>
+    <p>A shorthand property that combines <code>flex-direction</code> and <code>flex-wrap</code>, allowing for quicker, cleaner CSS code.</p>
+    <div class="flex-container" style="flex-flow: row wrap; width: 300px;">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+    </div>
+    <div class="example">
+        <code>flex-flow: row wrap;</code>
+    </div>
+
+    <h3>Justify Content</h3>
+    <p>This property aligns flex items along the main axis. Depending on how much space is available, I can align items to the start, end, center, or even distribute them with equal spacing.</p>
+    <div class="flex-container" style="justify-content: space-between;">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+    <div class="example">
+        <code>justify-content: space-between;</code>
+    </div>
+
+    <h3>Align Items</h3>
+    <p>This property aligns items along the cross axis. It’s particularly useful for centering items vertically, which was previously tricky in web design.</p>
+    <div class="flex-container" style="align-items: center; height: 100px;">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+    <div class="example">
+        <code>align-items: center;</code>
+    </div>
+
+    <h3>Align Content</h3>
+    <p>This is used when there are multiple rows of flex items. It helps align these rows relative to the container’s height when there is extra vertical space.</p>
+    <div class="flex-container" style="flex-wrap: wrap; height: 150px; align-content: space-between;">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+    </div>
+    <div class="example">
+        <code>align-content: space-between;</code>
+    </div>
+
+    <h2>Conclusion</h2>
+    <p>This module has empowered me with the skills to utilize Flexbox properties effectively, allowing me to control the positioning, alignment, and responsiveness of elements on a webpage. Now, it’s time to put this into practice and experiment with these flexible layout techniques.</p>
+</body>
+</html>
