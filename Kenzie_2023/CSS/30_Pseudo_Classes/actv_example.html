@@ -1,0 +1,127 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💪 Activity: Using Pseudo Classes</title>
+
+    <style>
+      /* Resets default margins and padding to avoid unwanted spacing */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .card {
+        /* Sets the width */
+        width: 400px;
+        /* Sets the height */
+        height: 350px;
+        /* Margin to center horizontally */
+        margin: 50px auto;
+        /* Inner padding */
+        padding: 50px;
+        /* Border with light gray color (#ccc) */
+        border: 2px solid #ccc;
+        /* Rounds the corners */
+        border-radius: 10px;
+      }
+
+      .card-title {
+        /* Centers the title text */
+        text-align: center;
+        /* Margin to space the title from other elements */
+        margin: 50px;
+      }
+
+      .card-form {
+        /* Defines the form container as flexible */
+        display: flex;
+        /* Sets the direction of form elements to column */
+        flex-direction: column;
+      }
+
+      /* Adds a 10-pixel bottom margin to space the labels */
+      .card-form label {
+        margin-bottom: 10px;
+      }
+
+      .card-form .input-email {
+        /* Sets the background color of the email input field to light gray (#E9ECEF) */
+        background: #e9ecef;
+        /* Sets a transparent border for the email input field */
+        border: 1px solid transparent;
+        /* Rounds the corners of the email input field */
+        border-radius: 10px;
+        /* Adds a 20-pixel bottom margin to space the email input field from other elements */
+        margin-bottom: 20px;
+        /* Defines horizontal padding of 0 pixels and vertical padding of 15 pixels for the email input field */
+        padding: 0 15px;
+        /* Sets the height of the email input field to 50 pixels */
+        height: 50px;
+      }
+
+      .card-form .input-email:hover {
+        /* Sets the background color of the email input field to lighter gray (#DEE2E6) when hovered */
+        background: #dee2e6;
+      }
+
+      .card-form .input-email:focus {
+        /* Sets the background color of the email input field to white (#fff) when focused */
+        background: #fff;
+        /* Defines a black (#000) 1-pixel border for the email input field when focused */
+        border: 1px solid #000;
+      }
+
+      .card-form .btn-sign {
+        /* Sets the background color of the subscribe button to blue (#1971C2) */
+        background: #1971c2;
+        /* Removes the border of the subscribe button */
+        border: none;
+        /* Rounds the corners of the subscribe button */
+        border-radius: 10px;
+        /* Sets the text color of the subscribe button to white (#fff) */
+        color: #fff;
+        /* Sets the height of the subscribe button to 50 pixels */
+        height: 50px;
+        /* Sets the cursor to pointer when hovering over the subscribe button */
+        cursor: pointer;
+      }
+
+      .card-form .btn-sign:hover {
+        /* Sets the background color of the subscribe button to darker blue (#1864AB) when hovered */
+        background: #1864ab;
+      }
+
+      .card-form .btn-sign:focus {
+        /* Defines a black (#000) 1-pixel border for the subscribe button when focused */
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Start of a section with the class card -->
+    <section class="card">
+      <!-- Section title -->
+      <h2 class="card-title">Subscribe to our Newsletter</h2>
+      <!-- Start of the form -->
+      <form class="card-form">
+        <!-- Email input field label -->
+        <label for="email">Email</label>
+        <!-- Email input field with "type" attribute set to "email" and the CSS class "input-email". The "name" attribute is set to "email" and the "id" attribute is also "email". There's also a placeholder text: "Enter your email here..." -->
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input-email"
+          placeholder="Enter your email here..."
+        />
+        <!-- Subscribe button with the CSS class "btn-sign". The "type" attribute is set to "button" and the displayed value is "Subscribe". -->
+        <input class="btn-sign" type="button" value="Subscribe" />
+        <!-- End of the form -->
+      </form>
+      <!-- End of the section -->
+    </section>
+  </body>
+</html>

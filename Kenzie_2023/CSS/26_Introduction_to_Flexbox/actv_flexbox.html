@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /* Define a class called "container-boxes" to be applied to an HTML element. */
+    .container-boxes {
+      /* Set the height of the element to 100% of the viewport height. */
+      height: 100vh;
+      /* Set the width of the element to 100% of the viewport width. */
+      width: 100vw;
+      /* Apply a flexible layout to the element and its children. */
+      display: flex;
+      /* Remove default list markers (dots, numbers, etc.) from the list. */
+      list-style: none;
+      /* Vertically center the list items within the parent element. */
+      align-items: center;
+      /* Distribute remaining space evenly around the list items. */
+      justify-content: space-around;
+    }
+
+    /* Define a class called "box" to be applied to an HTML element. */
+    .box {
+      /* Set the height of the element to 200 pixels. */
+      height: 200px;
+      /* Set the width of the element to 200 pixels. */
+      width: 200px;
+      /* Set the background color of the element to light gray (#c5c5c5). */
+      background-color: #c5c5c5;
+      /* Set the border radius of the element to 10 pixels, creating rounded corners. */
+      border-radius: 10px;
+    }
+  </style>
+  <title>💪 Activity: Flexbox Step by Step</title>
+</head>
+
+<body>
+  <!-- The <ul> element creates an unordered list with a class called "container-boxes", containing a set of listed items. -->
+  <ul class="container-boxes">
+    <!-- The <li> element defines a list item. In this case, it is a box. -->
+    <li class="box"></li>
+    <!-- Another box in the list. -->
+    <li class="box"></li>
+    <!-- One more box in the list. -->
+    <li class="box"></li>
+  </ul>
+</body>
+
+</html>

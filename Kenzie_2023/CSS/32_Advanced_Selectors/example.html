@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced CSS Selectors Example</title>
+    <style>
+      /* Attribute Selector */
+      input[type] {
+        background-color: blue; /* Applies to all input elements */
+        color: white; /* Text color for better visibility */
+      }
+
+      a[href$=".com.br"] {
+        color: red; /* Links ending with .com.br */
+      }
+
+      input[type="number"] {
+        background-color: lightblue; /* Applies to number input elements */
+      }
+
+      /* Descendant Selectors */
+      ul > li {
+        color: blue; /* Only <li> elements that are direct children of <ul> */
+      }
+
+      div > p {
+        font-weight: bold; /* Bold style for <p> directly inside <div> */
+      }
+
+      h2 + p {
+        color: green; /* <p> that immediately follows an <h2> */
+      }
+
+      p ~ span {
+        color: purple; /* All <span> that follow a <p> */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Advanced CSS Selectors Examples</h1>
+
+    <h2>Attribute Selector</h2>
+    <input type="text" placeholder="Digite seu nome" />
+    <input type="number" placeholder="Enter a number" />
+    <a href="http://example.com.br">Example Link</a>
+    <a href="http://example.com">Another Link</a>
+
+    <h2>Descendant Selectors</h2>
+    <div>
+      <p>This is a paragraph directly inside a div.</p>
+      <p>This is another paragraph inside the same div.</p>
+    </div>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <h2>Sibling Selectors</h2>
+    <h2>Heading</h2>
+    <p>This paragraph immediately follows the heading.</p>
+    <p>
+      This paragraph does not follow immediately and won't be affected by the
+      adjacent sibling selector.
+    </p>
+    <span>This span follows the paragraph and is styled.</span>
+    <p>This is another paragraph before the following span.</p>
+    <span>This span follows another paragraph.</span>
+  </body>
+</html>

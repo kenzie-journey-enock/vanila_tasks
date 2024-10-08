@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-elements Examples</title>
+    <style>
+      /* Example of ::before */
+      .box::before {
+        content: "Before: ";
+        color: red;
+      }
+
+      /* Example of ::after */
+      .box::after {
+        content: " :After";
+        color: blue;
+      }
+
+      /* Example of ::first-letter */
+      .first-letter::first-letter {
+        font-size: 2em;
+        font-weight: bold;
+        color: green;
+      }
+
+      /* Example of ::first-line */
+      .first-line::first-line {
+        font-weight: bold;
+        color: purple;
+      }
+
+      /* Example of ::selection */
+      ::selection {
+        background-color: yellow;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-elements Examples</h1>
+
+    <!-- Example of ::before and ::after -->
+    <div class="box">This is a box with content.</div>
+
+    <hr />
+
+    <!-- Example of ::first-letter -->
+    <p class="first-letter">
+      The first letter of this paragraph will be styled differently.
+    </p>
+
+    <hr />
+
+    <!-- Example of ::first-line -->
+    <p class="first-line">
+      This paragraph demonstrates the use of the ::first-line pseudo-element.
+      The first line will be bold and purple, while the rest of the text remains
+      unchanged.
+    </p>
+
+    <hr />
+
+    <!-- Example of ::selection -->
+    <p>
+      Select any part of this text to see how the ::selection pseudo-element
+      works. The selected text will have a yellow background and black text.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pseudo-classes Example</title>
+    <style>
+      /* Styling input states */
+      input:enabled {
+        background-color: #e0f7fa;
+      }
+
+      input:disabled {
+        background-color: #ffe0e0;
+        cursor: not-allowed;
+      }
+
+      input:placeholder-shown {
+        border: 2px dashed #2196f3;
+      }
+
+      input:checked {
+        border: 2px solid green;
+      }
+
+      input:blank {
+        border: 2px dotted #ff9800;
+      }
+
+      input:required {
+        border: 2px solid red;
+      }
+
+      input:optional {
+        border: 2px solid gray;
+      }
+
+      /* Styling user action pseudo-classes */
+      button:hover {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      button:active {
+        background-color: #45a049;
+      }
+
+      input:focus {
+        outline: 3px solid #3f51b5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Pseudo-classes Example</h1>
+
+    <h2>Form with Input Pseudo-classes</h2>
+
+    <form>
+      <!-- Enabled input field -->
+      <label for="name">Name (enabled):</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        required
+      /><br /><br />
+
+      <!-- Disabled input field -->
+      <label for="email">Email (disabled):</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        disabled
+      /><br /><br />
+
+      <!-- Optional input field -->
+      <label for="phone">Phone (optional):</label>
+      <input
+        type="tel"
+        id="phone"
+        placeholder="Enter your phone number"
+        optional
+      /><br /><br />
+
+      <!-- Checkbox with :checked pseudo-class -->
+      <label for="subscribe">Subscribe to newsletter:</label>
+      <input type="checkbox" id="subscribe" /><br /><br />
+    </form>
+
+    <h2>User Action Pseudo-classes</h2>
+
+    <!-- Button with :hover and :active pseudo-classes -->
+    <button>Hover and Click Me</button>
+  </body>
+</html>

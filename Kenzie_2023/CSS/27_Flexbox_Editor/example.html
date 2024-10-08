@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #box1 {
+        color: #e3e3e3;
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px; /* Centering text vertically */
+      }
+
+      #box2 {
+        color: #e3e3e3;
+        background-color: purple;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px; /* Centering text vertically */
+      }
+
+      #box3 {
+        color: #e3e3e3;
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px; /* Centering text vertically */
+      }
+
+      .container {
+        display: flex;
+        border: 1px solid black;
+        height: 400px;
+        justify-content: space-around; /* Space boxes evenly */
+        align-items: center; /* Center boxes vertically */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">
+        <p>Box 1</p>
+      </div>
+      <div class="box" id="box2">
+        <p>Box 2</p>
+      </div>
+      <div class="box" id="box3">
+        <p>Box 3</p>
+      </div>
+    </div>
+  </body>
+</html>

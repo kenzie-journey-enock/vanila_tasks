@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Inheritance, Specificity, and Priority</title>
+    <style>
+      /* Lowest Priority - Tag selector */
+      div {
+        background-color: red;
+        color: white;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+
+      /* Medium Priority - Class selector */
+      .highlight {
+        background-color: yellow;
+        color: black;
+      }
+
+      /* High Priority - ID selector */
+      #container {
+        background-color: red;
+        color: white;
+      }
+
+      #container_text {
+        color: white;
+      }
+
+      /* Using the parent-child relationship to override inherited styles */
+      #container > p {
+        color: rgb(87, 59, 3);
+      }
+
+      /* Demonstrating how ID selectors can override previous styles */
+      #container_text_override {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Inheritance, Specificity, and Priority</h1>
+
+    <!-- Example of inheritance: the paragraph will inherit the white color from the div -->
+    <div>
+      <p>This text inherits the white color from the div.</p>
+    </div>
+
+    <!-- Example of specificity: applying ID and class selectors -->
+    <div id="container">
+      <p id="container_text">
+        This text is brown (rgb(87, 59, 3)) due to ID-based specificity.
+      </p>
+      <p id="container_text_override">
+        This text is white, overriding the previous style.
+      </p>
+      <p class="highlight">
+        This text has a class-based yellow background and black color.
+      </p>
+    </div>
+
+    <!-- Example of sibling elements -->
+    <div id="container">
+      <p id="container_text">
+        This paragraph is the first sibling and inherits styles from its parent.
+      </p>
+      <p id="container_text_sibling">
+        This paragraph is the second sibling and inherits the same styles.
+      </p>
+    </div>
+  </body>
+</html>
