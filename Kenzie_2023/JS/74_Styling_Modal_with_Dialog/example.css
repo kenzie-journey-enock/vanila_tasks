@@ -1,0 +1,29 @@
+/* Reset styles */
+body, h1, button, div {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+dialog {
+  padding: 0;
+  width: 500px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  border: 1px solid black;
+}
+
+.modal__container {
+  padding: 0;
+  width: 100%; /* Use full width of dialog */
+  height: 100%; /* Use full height of dialog */
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling the backdrop */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}

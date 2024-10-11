@@ -76,3 +76,39 @@
 ## Advanced Selectors
 
 [Go](32_Advanced_Selectors)
+
+## Variables in CSS
+
+[Go](70_Variables_in_CSS)
+
+## Importing Files into CSS
+
+[GO](71_Importing_Files_into_CSS)
+
+## Position
+
+[Go](72_Position)
+
+## Responsiveness First Steps
+
+[Go](75_Responsiveness_First_Steps)
+
+## REM
+
+[Go](76_REM)
+
+## Media Query
+
+[Go](77_Media_Query)
+
+## Breakpoints
+
+[Go](78_Breakpoints)
+
+## Clamp
+
+[Go](79_Clamp)
+
+## Responsive Menus
+
+[Go](80_Responsive_Menus)

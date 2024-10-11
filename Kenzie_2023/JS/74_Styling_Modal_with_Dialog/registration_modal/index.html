@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <script src="./src/scripts/modal.js" defer></script>
+
+    <title>Registration Modal</title>
+  </head>
+  <body>
+    <main>
+      <div class="main__container">
+        <section class="slogan">
+          <img src="./src/assets/pair_programming.svg" />
+        </section>
+        <form class="form">
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input class="input__box" type="text" name="email" id="email" />
+          </div>
+          <div class="form__group">
+            <label for="password">Password</label>
+            <input
+              class="input__box"
+              type="text"
+              name="password"
+              id="password"
+            />
+          </div>
+          <a href="#" target="_blank" class="form__forgot-pass"
+            >Forgot your password?</a
+          >
+
+          <button id="openModal">
+            <a href="#" target="" class="form__register-link">
+              Don't have an account? Register here!
+            </a>
+          </button>
+
+          <button class="form__login-btn">Log In</button>
+        </form>
+      </div>
+    </main>
+    <dialog id="modalController" class="form">
+      <form class="form">
+        <div class="form__group">
+          <label for="name">Name</label>
+          <input class="input__box" type="text" name="name" id="name" />
+        </div>
+        <div class="form__group">
+          <label for="lastname">Lastname</label>
+          <input class="input__box" type="text" name="lastname" id="lastname" />
+        </div>
+        <div class="form__group">
+          <label for="phone">Phone</label>
+          <input class="input__box" type="text" name="phone" id="phone" />
+        </div>
+        <div class="form__group">
+          <label for="password">New Password</label>
+          <input class="input__box" type="text" name="password" id="password" />
+        </div>
+        <button class="form__login-btn" id="closeModal">Register</button>
+      </form>
+    </dialog>
+  </body>
+</html>

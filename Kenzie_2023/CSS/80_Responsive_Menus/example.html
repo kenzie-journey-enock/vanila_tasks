@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Menu Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .header__container {
+        padding: 1rem;
+        background-color: rgb(162, 162, 162);
+        box-shadow: 0 0 1rem 0.3rem rgb(28, 28, 28);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      .header__logo {
+        font-size: 1.5rem;
+        color: white;
+      }
+
+      .header__menu {
+        position: relative;
+      }
+
+      .menu__button {
+        display: none; /* Hidden on larger screens */
+        background-color: transparent;
+        border: none;
+        font-size: 1.2rem;
+        color: white;
+      }
+
+      .menu__list {
+        display: flex; /* Display menu items as a flex container */
+        gap: 1rem;
+      }
+
+      .menu__list a {
+        text-decoration: none;
+        color: white;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s;
+      }
+
+      .menu__list a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      /* Styles for smaller screens */
+      @media (max-width: 768px) {
+        .menu__list {
+          display: none; /* Hide the menu by default */
+          flex-direction: column; /* Stack menu items vertically */
+          position: absolute;
+          background-color: rgb(220, 220, 220);
+          width: 100%;
+          top: 50px; /* Position below the header */
+          z-index: 1;
+        }
+
+        .menu__button {
+          display: block; /* Show the menu button on smaller screens */
+          color: white;
+        }
+
+        .menu__list.show {
+          display: flex; /* Show menu when the button is clicked */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header__container">
+      <h1 class="header__logo">Logo</h1>
+      <nav class="header__menu">
+        <button class="menu__button">Menu</button>
+        <ul class="menu__list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script>
+      const menuButton = document.querySelector(".menu__button");
+      const menu = document.querySelector(".menu__list");
+
+      menuButton.addEventListener("click", function () {
+        menu.classList.toggle("show"); // Toggle the 'show' class to display the menu
+        menuButton.innerText = menuButton.innerText === "Menu" ? "X" : "Menu"; // Change button text
+      });
+    </script>
+  </body>
+</html>

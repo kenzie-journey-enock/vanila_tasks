@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design with REM Units</title>
+    <style>
+      /* Set the root font size */
+      html {
+        font-size: 16px; /* This means 1rem = 16px */
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5; /* Improves readability */
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 2rem; /* 2rem = 32px */
+        color: #333;
+      }
+
+      h2 {
+        font-size: 1.5rem; /* 1.5rem = 24px */
+        color: #555;
+      }
+
+      p {
+        font-size: 1rem; /* 1rem = 16px */
+        color: #666;
+      }
+
+      /* Example of a larger font for emphasis */
+      .highlight {
+        font-size: 1.25rem; /* 1.25rem = 20px */
+        color: #e74c3c; /* A nice red color */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Design Using REM Units</h1>
+    <h2>Understanding REM Units</h2>
+    <p>
+      In this example, we are learning how to use <strong>REM</strong> units in
+      CSS for responsive web design. By setting the font size of the root
+      element, we can easily scale other elements.
+    </p>
+
+    <h2>Benefits of Using REM</h2>
+    <p>
+      Using <strong>REM</strong> units provides a consistent scaling system
+      across different devices. If the root font size changes, all elements
+      styled with REM will scale proportionately.
+    </p>
+
+    <p class="highlight">
+      This paragraph uses a larger font size for emphasis, demonstrating the
+      flexibility of REM units.
+    </p>
+  </body>
+</html>

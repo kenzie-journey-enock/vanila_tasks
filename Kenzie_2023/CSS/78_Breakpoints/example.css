@@ -1,0 +1,86 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Media Queries */
+
+/* Styles for devices with width less than 320px */
+@media (max-width: 320px) {
+  header {
+      font-size: 18px;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+}
+
+/* Styles for devices with width between 321px and 480px */
+@media (min-width: 321px) and (max-width: 480px) {
+  header {
+      font-size: 20px;
+  }
+
+  nav ul li {
+      margin-right: 10px;
+  }
+}
+
+/* Styles for devices with width between 481px and 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+      font-size: 22px;
+  }
+
+  nav ul li {
+      margin-right: 15px;
+  }
+}
+
+/* Styles for devices with width between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+      font-size: 24px;
+  }
+
+  nav ul {
+      text-align: center;
+  }
+}
+
+/* Styles for larger devices (desktops) */
+@media (min-width: 1025px) {
+  header {
+      font-size: 26px;
+  }
+
+  nav ul {
+      text-align: right;
+  }
+}

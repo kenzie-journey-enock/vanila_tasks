@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Example with Dialog</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="showMessage">Show Message</button>
+
+    <dialog id="modalContainer">
+      <h1>Learning to Build a Modal</h1>
+      <button id="closeModal">Close Modal</button>
+    </dialog>
+
+    <script>
+      function handleModal() {
+        const button = document.querySelector("#showMessage");
+        const modalContainer = document.querySelector("#modalContainer");
+
+        button.addEventListener("click", () => {
+          modalContainer.showModal();
+          closeModal(); // Ensures close functionality is set up after showing the modal
+        });
+      }
+
+      function closeModal() {
+        const button = document.querySelector("#closeModal");
+        const modalContainer = document.querySelector("#modalContainer");
+
+        button.addEventListener("click", () => {
+          modalContainer.close();
+        });
+      }
+
+      handleModal(); // Initialize the modal functionality
+    </script>
+  </body>
+</html>
