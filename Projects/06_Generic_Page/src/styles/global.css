@@ -1,0 +1,291 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --brand-1: #4C6EF5;
+  --brand-2: #364FC7;
+  --grey-1: #191C1F;
+  --grey-2: #212529;
+  --grey-3: #343A40;
+  --grey-4: #ADB5BD;
+  --grey-5: #CED4DA;
+  --grey-6: #EDF2FF;
+  --grey-7: #F8F9FA;
+
+  --default-fs: 16px;
+
+  --max-width: 100vw;
+  --width: 100vw;
+  --height: 100vh;
+
+  --large-fw: 600;
+  --small-fw: 400;
+
+  --title-1-fs: 3.25rem;
+  --title-2-fs: 2.5rem;
+  --title-3-fs: 2rem;
+
+  --text-1-fs: 1.25rem;
+  --text-2-fs: 1.125rem;
+  --text-3-fs: 1rem;
+
+  --line-h-large: 160%;
+  --line-h-med: 150%;
+  --line-h-small: 140%;
+}
+
+html {
+  font-size: var(--default-fs);
+}
+
+body {
+
+  font-family: "Inter", sans-serif;
+  background-color: var(--brand1);
+  max-width: var(--max-width);
+  color: var(--grey-7);
+  width: var(--width);
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px;
+  background-color: var(--grey-1);
+}
+
+header > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header > div > button {
+  width: 16rem;
+  height: 3.75rem;
+  border: 2px solid var(--grey-7);
+  background-color: transparent;
+  font-size: var(--text-3-fs);
+  color: var(--grey-7);
+}
+
+main {
+  width: 100%;
+}
+
+main > section {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  background-color: var(--grey-2);
+}
+
+button {
+  background-color: var(--brand-1);
+  color: var(--grey-7);
+  font-size: var(--text-1-fs);
+  line-height: var(--line-h-med);
+  border: none;
+  height: 3.75rem;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+main > section:nth-child(even) {
+  background-color: var(--grey-1);
+}
+
+main > section:nth-child(1) > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 13rem 0;
+}
+
+main > section:nth-child(1) > div > h1 {
+  color: var(--grey-6);
+  font-size: var(--title-1-fs);
+  margin: 1rem 0;
+}
+
+main > section:nth-child(1) > div > h1 > span {
+  color: var(--brand-1);
+}
+
+main > section:nth-child(1) > div > p {
+  color: var(--grey-4);
+  font-size: var(--text-1-fs);
+  line-height: var(--line-h-med);
+  width: 50%;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+main > section:nth-child(1) > div > button {
+  width: 9rem;
+}
+
+main > section:nth-child(2) > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10rem;
+}
+
+main > section:nth-child(2) > div > h2 {
+  font-size: var(--title-2-fs);
+  color: var(--grey-6);
+  text-align: center;
+  width: 50%;
+}
+
+main > section:nth-child(2) > div > p {
+  font-size: var(--text-1-fs);
+  color: var(--grey-5);
+  line-height: var(--line-h-small);
+  font-weight: var(--small-fw);
+  width: 50%;
+  padding: 0 2rem;
+  text-align: justify;
+}
+
+main > section:nth-child(3) > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5rem 10rem;
+}
+
+main > section:nth-child(3) > div > div {
+  text-align: start;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+main > section:nth-child(3) > div > div > div {
+  padding: 0 3rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+main > section:nth-child(3) > div > div > div > h2 {
+  font-size: var(--title-2-fs);
+  font-weight: var(--large-fw);
+  line-height: var(--line-h-large);
+  padding: 0 0 2rem 0;
+}
+
+main > section:nth-child(3) > div > div > div > p {
+  font-size: var(--text-1-fs);
+  font-weight: var(--med-fw);
+  line-height: var(--line-h-small);
+  color: var(--grey-4);
+  text-align: justify;
+  padding: 0 0 2rem 0;
+}
+
+main > section:nth-child(3) > div > ul {
+  width: 50%;
+}
+
+main > section:nth-child(3) > div > ul > li > h3 {
+  text-align: center;
+  font-size: var(--title-3-fs);
+  font-weight: var(--large-fw);
+  line-height: var(--line-h-large);
+  padding: 0 0 2rem 0;
+}
+
+main > section:nth-child(3) > div > ul > li > p {
+  text-align: justify;
+  font-size: var(--text-1-fs);
+  font-weight: var(--small-fw);
+  line-height: var(--line-h-large);
+  color: var(--grey-4);
+  padding: 0 0 2rem 0;
+}
+
+main > section:nth-child(4) {
+  padding: 5rem 0 0 0;
+}
+
+main > section:nth-child(4) > div {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 10rem;
+}
+
+main > section:nth-child(4) > div > div {
+  padding: 0 5rem;
+  width: 50%;
+}
+
+main > section:nth-child(4) > div > div > div {
+  background-color: var(--brand-1);
+  padding: 5rem 3rem;
+  margin: 0 0 0 5rem;
+}
+
+main > section:nth-child(4) > div > div > div > h2 {
+  font-size: var(--title-2-fs);
+  font-weight: var(--large-fw);
+  line-height: var(--line-h-large);
+  text-align: start;
+}
+
+main > section:nth-child(4) > div > div > div > p {
+  font-size: var(--text-1-fs);
+  font-weight: var(--small-fw);
+  line-height: var(--line-h-med);
+  text-align: justify;
+}
+
+main > section:nth-child(4) > div > ul {
+  text-align: start;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+main > section:nth-child(4) > div > ul > li {
+  display: flex;
+  padding: 0 0 5rem 0;
+}
+
+main > section:nth-child(4) > div > ul > li > div {
+  width: 40%;
+}
+
+main > section:nth-child(4) > div > ul > li > div > h3 {
+  font-size: var(--title-3-fs);
+  font-weight: var(--large-fw);
+  line-height: var(--line-h-med);
+  color: var(--grey-6);
+  text-align: start;
+}
+
+main > section:nth-child(4) > div > ul > li > p {
+  text-align: justify;
+  font-size: var(--text-2-fs);
+  font-weight: var(--small-fw);
+  line-height: var(--line-h-small);
+  color: var(--grey-5);
+  width: 60%;
+}
+
+main > section:last-child {
+  background-color: var(--grey-2);
+}
+
+main > footer {
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--grey-1);
+}

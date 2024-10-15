@@ -1,0 +1,171 @@
+@import url("./global.css");
+@import url("./modal.css");
+
+@media (max-width: 1024px) {
+
+  main > section:nth-child(3) > div {
+    padding: 2rem 5rem;
+  }
+
+  main > section:nth-child(4) > div {
+    padding: 3rem 5rem;
+  }
+
+  main > section:nth-child(4) > div > ul > li {
+    flex-direction: column;
+  }
+
+  main > section:nth-child(4) > div > ul > li > div {
+    width: 100%;
+    padding: 0 0 1rem 0;
+  }
+
+  main > section:nth-child(4) > div > ul > li > p {
+    width: 100%;
+    text-align: start;
+  }
+
+  main > section:nth-child(4) > div > div {
+    padding: 0;
+  }
+
+  main > section:nth-child(4) > div > div > div {
+    padding: 3rem 1rem;
+    margin: 0;
+  } 
+
+  dialog > section {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  main > section:nth-child(1) > div {
+    padding: 3rem 0;
+  }
+
+  main > section:nth-child(1) > div > h1 {
+    text-align: center;
+    padding: 0 0 2rem 0;
+  }
+
+  main > section:nth-child(1) > div > p {
+    margin: 0;
+    width: 85%;
+    padding: 0 0 2rem 0;
+  }
+
+  main > section:nth-child(2) > div {
+    flex-direction: column;
+    padding: 5rem;
+  }
+
+  main > section:nth-child(2) > div > h2 {
+    width: 90%;
+    padding: 0 0 2rem 0;
+  }
+
+  main > section:nth-child(2) > div > p {
+    width: 90%;
+  }
+
+  main > section:nth-child(3) > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  main > section:nth-child(3) > div > div {
+    width: 90%;
+    text-align: center;
+  }
+
+  main > section:nth-child(3) > div > div > div {
+    padding: 4rem 0;
+  }
+
+  main > section:nth-child(3) > div > ul {
+    width: 90%;
+  }
+
+  main > section:nth-child(4) > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  main > section:nth-child(4) > div > div {
+    padding: 0;
+    width: 90%;
+  }
+
+  main > section:nth-child(4) > div > div > div {
+    padding: 4rem;
+    margin: 1rem;
+  }
+
+  main > section:nth-child(4) > div > ul {
+    width: 80%;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+  }
+
+  main > section:nth-child(4) > div > ul > li {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 3rem 0;
+  }
+
+  main > section:nth-child(4) > div > ul > li > div {
+    width: 100%;
+  }
+
+  main > section:nth-child(4) > div > ul > li > p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+
+  header {
+    height: 130px;
+  }
+
+  header > div > button {
+    width: 10rem;
+    height: 6rem;
+    font-size: var(--text-3-fs);
+  }
+
+  main > section:nth-child(2) > div {
+    padding: 4rem 2rem;
+  }
+
+  main > section:nth-child(2) > div > h2 {
+    width: 100%;
+  }
+
+  main > section:nth-child(2) > div > p {
+    width: 100%;
+  }
+
+  main > section:nth-child(3) > div > div {
+    width: 100%;
+  }
+
+  main > section:nth-child(4) > div > ul > li > div {
+    padding: 1rem 0;
+  }
+
+  main > section:nth-child(4) > div > div {
+    width: 100%;
+  }
+
+  dialog > section > div:nth-child(2) > button {
+    font-size: var(--text-3-fs);
+  }
+}

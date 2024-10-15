@@ -1,0 +1,89 @@
+dialog {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--grey-7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+dialog > section {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  height: 75%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: var(--grey-2);
+}
+
+dialog > section > div:nth-child(1) {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+dialog > section > div:nth-child(1) > h3 {
+  font-size: var(--title-3-fs);
+  margin-top: 1.5rem;
+}
+
+dialog > section > div:nth-child(1) > button {
+  font-size: var(--text-1-fs);
+  color: var(--grey-4);
+  background-color: var(--grey-3);
+  border: none;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.5rem 0.7rem;
+}
+
+dialog > section > div:nth-child(1) > button:hover {
+  background-color: var(--brand-2);
+}
+
+dialog > section > div:nth-child(2) {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+dialog > section > div:nth-child(2) > p {
+  padding: 2rem 0;
+  color: var(--grey-4);
+  font-size: var(--text-3-fs);
+  line-height: var(--line-h-large);
+  margin: 1rem 1rem;
+}
+
+dialog > section > div:nth-child(2) > input {
+  background-color: var(--grey-1);
+  padding: 1rem;
+  font-size: var(--text-1-fs);
+  caret-color: var(--grey-7);
+  color: var(--grey-7);
+  border: none;
+  margin: 2rem 0;
+}
+
+dialog > section > div:nth-child(2) > input:focus {
+  border: none;
+  outline: none;
+}
+
+dialog > section > div:nth-child(2) > button {
+
+}
