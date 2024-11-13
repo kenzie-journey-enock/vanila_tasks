@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage Examples</title>
+  </head>
+  <body>
+    <h1>LocalStorage Examples</h1>
+
+    <!-- Shopping Cart Example -->
+    <section>
+      <h2>Shopping Cart</h2>
+      <button onclick="addItemToCart()">Add T-shirt to Cart</button>
+      <button onclick="displayCart()">View Cart</button>
+      <div id="cartDisplay"></div>
+    </section>
+
+    <hr />
+
+    <!-- Notes App Example -->
+    <section>
+      <h2>Notes App</h2>
+      <button onclick="addNote()">Add Sample Note</button>
+      <button onclick="displayNotes()">View Notes</button>
+      <div id="notesDisplay"></div>
+    </section>
+
+    <hr />
+
+    <!-- Game Progress Example -->
+    <section>
+      <h2>Game Progress</h2>
+      <button onclick="saveGameProgress()">Save Game Progress</button>
+      <button onclick="displayGameProgress()">View Game Progress</button>
+      <div id="gameProgressDisplay"></div>
+    </section>
+
+    <script>
+      // Shopping Cart Functions
+      function addItemToCart() {
+        const item = { name: "T-shirt", price: 29.99 };
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push(item);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("T-shirt added to cart");
+      }
+
+      function displayCart() {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let display = "<h3>Cart Items:</h3>";
+        cart.forEach((item) => {
+          display += `${item.name} - $${item.price.toFixed(2)}<br>`;
+        });
+        document.getElementById("cartDisplay").innerHTML = display;
+      }
+
+      // Notes App Functions
+      function addNote() {
+        const note = {
+          title: "Shopping List",
+          content: "Milk, Bread, Butter",
+          createdDate: new Date().toLocaleDateString(),
+        };
+        let notes = JSON.parse(localStorage.getItem("notes")) || [];
+        notes.push(note);
+        localStorage.setItem("notes", JSON.stringify(notes));
+        alert("Note added");
+      }
+
+      function displayNotes() {
+        const notes = JSON.parse(localStorage.getItem("notes")) || [];
+        let display = "<h3>Notes:</h3>";
+        notes.forEach((note) => {
+          display += `<strong>${note.title}</strong><br>${note.content}<br>${note.createdDate}<br><br>`;
+        });
+        document.getElementById("notesDisplay").innerHTML = display;
+      }
+
+      // Game Progress Functions
+      function saveGameProgress() {
+        const progress = {
+          score: 1000,
+          level: 3,
+          items: ["Sword", "Shield"],
+        };
+        localStorage.setItem("gameProgress", JSON.stringify(progress));
+        alert("Game progress saved");
+      }
+
+      function displayGameProgress() {
+        const progress = JSON.parse(localStorage.getItem("gameProgress")) || {};
+        const display = `
+                <h3>Game Progress:</h3>
+                Score: ${progress.score || 0}<br>
+                Level: ${progress.level || 0}<br>
+                Items: ${(progress.items || []).join(", ")}
+            `;
+        document.getElementById("gameProgressDisplay").innerHTML = display;
+      }
+    </script>
+  </body>
+</html>

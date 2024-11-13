@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure LocalStorage Example</title>
+    <script>
+      // Basic encryption function (for demonstration only; use stronger encryption in production)
+      function encryptData(data) {
+        return btoa(data); // Base64 encode the data
+      }
+
+      // Basic decryption function
+      function decryptData(data) {
+        return atob(data); // Base64 decode the data
+      }
+
+      // Function to save data securely in LocalStorage
+      function saveData() {
+        const userData = document.getElementById("userData").value;
+        if (userData) {
+          const encryptedData = encryptData(userData);
+          localStorage.setItem("secureData", encryptedData);
+          alert("Data saved securely!");
+        }
+      }
+
+      // Function to retrieve data from LocalStorage
+      function getData() {
+        const encryptedData = localStorage.getItem("secureData");
+        if (encryptedData) {
+          const decryptedData = decryptData(encryptedData);
+          alert("Retrieved Data: " + decryptedData);
+        } else {
+          alert("No data found.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Secure LocalStorage Example</h2>
+    <input type="text" id="userData" placeholder="Enter some data" />
+    <button onclick="saveData()">Save Data</button>
+    <button onclick="getData()">Retrieve Data</button>
+  </body>
+</html>

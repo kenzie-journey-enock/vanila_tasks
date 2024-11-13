@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage Example</title>
+  </head>
+  <body>
+    <h1>LocalStorage Example</h1>
+    <form id="nameForm">
+      <input
+        type="text"
+        id="nameInput"
+        placeholder="Enter your name"
+        required
+      />
+      <button type="submit">Save Name</button>
+      <button type="button" id="updateButton">Update Name</button>
+      <button type="button" id="deleteButton">Delete Name</button>
+    </form>
+
+    <h2 id="greeting"></h2>
+
+    <script>
+      // Function to update the greeting based on LocalStorage
+      function updateGreeting() {
+        const name = localStorage.getItem("name");
+        const greetingElement = document.getElementById("greeting");
+        if (name) {
+          greetingElement.textContent = `Hello, ${name}!`;
+        } else {
+          greetingElement.textContent = "";
+        }
+      }
+
+      // Event listener for form submission to save name
+      document
+        .getElementById("nameForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+          const nameInput = document.getElementById("nameInput").value;
+          localStorage.setItem("name", nameInput);
+          updateGreeting();
+          document.getElementById("nameInput").value = ""; // Clear the input
+        });
+
+      // Event listener for updating the name
+      document
+        .getElementById("updateButton")
+        .addEventListener("click", function () {
+          const nameInput = document.getElementById("nameInput").value;
+          if (nameInput) {
+            localStorage.setItem("name", nameInput);
+            updateGreeting();
+            document.getElementById("nameInput").value = ""; // Clear the input
+          }
+        });
+
+      // Event listener for deleting the name
+      document
+        .getElementById("deleteButton")
+        .addEventListener("click", function () {
+          localStorage.removeItem("name");
+          updateGreeting();
+        });
+
+      // Initial greeting update on page load
+      updateGreeting();
+    </script>
+  </body>
+</html>

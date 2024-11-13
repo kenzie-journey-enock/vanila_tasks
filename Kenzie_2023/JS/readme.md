@@ -147,3 +147,87 @@
 ## Form Event
 
 [Go](69_Form_Event)
+
+## Creating Modal with Dialog
+
+[Go](73_Creating_Modal_with_Dialog)
+
+## Styling Modal with Dialog
+
+[Go](74_Styling_Modal_with_Dialog)
+
+## JS Modern
+
+[Go](81_JS_Modern)
+
+## Template Literals and Ternary Operator
+
+[Go](82_Template_Literals_and_Ternary_Operator)
+
+## Arrow Function
+
+[Go](83_Arrow_Function)
+
+## Default Parameters
+
+[Go](84_Default_Parameters)
+
+## Block Scope
+
+[Go](85_Block_Scope)
+
+## Array Methods in ES6
+
+[Go](86_Array_Methods_in_ES6)
+
+## forEach Method
+
+[Go](87_forEach_Method)
+
+## map Method
+
+[Go](88_map_Method)
+
+## filter Method
+
+[Go](89_filter_Method)
+
+## reduce Method
+
+[Go](90_reduce_Method)
+
+## slice Method
+
+[Go](91_slice_Method)
+
+## includes and indexOf Methods
+
+[Go](92_includes_and_indexOf_Methods)
+
+## Destructuring and indexOf Methods
+
+[Go](93_Desctructuring_Arrays_and_Objects)
+
+## Spread Operator
+
+[Go](94_Spread_Operator)
+
+## ES6 modules (import / export)
+
+[Go](95_ES6_modules_import_&_export)
+
+## Introduction to JSON
+
+[Go](96_Introduction_to_JSON)
+
+## Working with JSON in JS
+
+[Go](97_Working_with_JSON_in_JS)
+
+## JSON Validation
+
+[Go](98_JSON_Validation)
+
+## Introduction to LocalStorage
+
+[Go](99_Introduction_to_LocalStorage)

@@ -1,0 +1,17 @@
+{
+  "user": {
+    "id": 12345,
+    "username": "johndoe",
+    "email": "johndoe@example.com",
+    "isActive": true,
+    "age": 30,
+    "address": {
+      "street": "123 Main St",
+      "city": "Springfield",
+      "state": "IL",
+      "zipCode": "62701"
+    },
+    "interests": ["reading", "traveling", "coding"],
+    "profilePicture": null
+  }
+}
