@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <title>Open Music</title>
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header>
+      <!-- DESENVOLVA AQUI OS ELEMENTOS DO CABEÇALHO -->
+      <div class="logo">
+        <h1>open</h1>
+        <h1>music</h1>
+      </div>
+      <button type="button" class="icon_theme" id="btn-theme">
+        <object
+          id="sun_icon"
+          class="sun_icon"
+          data="./src/assets/icons/sun-icon.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+        <object
+          id="moon_icon"
+          class="moon_icon"
+          data="./src/assets/icons/moon-icon.svg"
+          type="image/svg+xml"
+          width="100%"
+          height="100%"
+        ></object>
+      </button>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+      <!-- SEÇÃO DE FILTRO POR GENERO -->
+      <section>
+        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+        <div class="genre_title"><h2>Gênero Musical</h2></div>
+        <div class="genre_btns">
+          <button id="genre-btn" class="genre_btn">Todos</button>
+          <button id="genre-btn" class="genre_btn">Pop</button>
+          <button id="genre-btn" class="genre_btn">MPB</button>
+          <button id="genre-btn" class="genre_btn">Forró</button>
+          <button id="genre-btn" class="genre_btn">Samba</button>
+          <button id="genre-btn" class="genre_btn">Baião</button>
+          <button id="genre-btn" class="genre_btn">Rap</button>
+          <button id="genre-btn" class="genre_btn">Hip-Hop</button>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DE FILTRO POR PREÇO -->
+      <section>
+        <div class="price_title">
+          <h2>Definir Preço</h2>
+          <h2>Ate <span id="price_range">R$ 100</span></h2>
+        </div>
+        <div class="price_inp_range">
+          <input type="range" min="0" max="100" value="50" />
+        </div>
+        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+      </section>
+
+      <!-- SEÇÃO DE ALBUNS -->
+      <section>
+        <h2>Albuns Encontrados</h2>
+        <ul id="album_list" class="albums_list"></ul>
+        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+      </section>
+    </main>
+    <script type="module" src="./src/scripts/index.js"></script>
+  </body>
+</html>

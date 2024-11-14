@@ -1,0 +1,56 @@
+header {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--brand-2);
+}
+
+header div.logo {
+  display: flex;
+  width: 14rem;
+  justify-content: space-between;
+}
+
+header div.logo h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 48.41px;
+  color: var(--grey-2);
+}
+
+header div.logo h1::first-letter {
+  color: var(--brand-2);
+}
+
+
+header button.icon_theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+  width: 2.75rem;
+  height: 2.25rem;
+  border-radius: 5px;
+  border: none;
+}
+
+header button.icon_theme object {
+  display: flex;
+  pointer-events: none;
+  position: absolute;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+header button.icon_theme object.moon_icon {
+  visibility: hidden;
+}
+
+header button.icon_theme object.sun_icon {
+  visibility: visible;
+}

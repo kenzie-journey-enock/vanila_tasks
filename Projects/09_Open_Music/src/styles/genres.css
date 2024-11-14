@@ -1,0 +1,25 @@
+main section div.genre_btns{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+main section div.genre_btns button.genre_btn {
+  border: none;
+  border-radius: 4px;
+  width: 4.6rem;
+  height: 2rem;
+  margin-right: 1rem;
+  background-color: transparent;
+
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+main section div.genre_btns button.genre_btn:hover {
+  background-color: var(--gray-2);
+  color: var(--gray-7);
+}
