@@ -18,7 +18,7 @@ const listaDeSobremesas = [
     descricao:
       "O chocolate é um alimento feito com base na amêndoa fermentada e torrada do cacau.",
     imagem:
-      "https://upload.wikimedia.org/wikipedia/commons/3/36/Chocolate-branco-2.webp",
+      "https://static.itdg.com.br/images/1200-630/aa29d53e9ac146ceac698d360223f83d/chocolate-branco.jpg",
   },
   {
     nome: "Doce de morango",
@@ -32,7 +32,7 @@ const listaDeSobremesas = [
     descricao:
       "Aprenda a preparar esta deliciosa receita de mousse de limão rápido. Uma sobremesa perfeita para os dias quentes. Confira!",
     imagem:
-      "https://static.clubedaanamariabraga.com.br/wp-content/uploads/2019/10/mousse-de-limao-facil-1.jpg?x41527",
+      "https://receitadaboa.com.br/wp-content/uploads/2024/07/mousse-de-limao.jpg",
   },
   {
     nome: "Chocolate",

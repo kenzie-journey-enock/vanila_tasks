@@ -40,3 +40,7 @@ function aoSubmeter(event) {
     console.error("Retorno da função inválido");
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  renderizaSobremesas(listaDeSobremesas);
+});
