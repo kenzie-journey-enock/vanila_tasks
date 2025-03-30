@@ -1,0 +1,65 @@
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Projetos</title>
+  <link rel="stylesheet" href="styles/global.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Vanila projects</h1>
+    <div class="grid">
+      <script>
+        const projects = [
+          "01_TODO_List",
+          "02_E_Commerce",
+          "03_Social_Media",
+          "04_Blog",
+          "05_Rock_Paper_and_Scissors",
+          "06_Generic_Page",
+          "07_ES6_Methods",
+          "08_Variable_Generator",
+          "09_Open_Music",
+        ];
+        projects.forEach(project => {
+          document.write(`
+                        <div class="card" onclick="window.location.href='/Projects/${project}/index.html'">
+                            <h2 class="card-title">${project}</h2>
+                            <p class="card-text">Clique para acessar</p>
+                        </div>
+                    `);
+        });
+      </script>
+    </div>
+  </div>
+  <div class="container">
+    <h1 class="title">Vanila tasks</h1>
+    <div class="grid">
+      <script>
+        const tasks = [
+          "01_TODO_List",
+          "02_E_Commerce",
+          "03_Social_Media",
+          "04_Blog",
+          "05_Rock_Paper_and_Scissors",
+          "06_Generic_Page",
+          "07_ES6_Methods",
+          "08_Variable_Generator",
+          "09_Open_Music",
+        ];
+        tasks.forEach(task => {
+          document.write(`
+                        <div class="card" onclick="window.location.href='/Projects/${task}/index.html'">
+                            <h2 class="card-title">${task}</h2>
+                            <p class="card-text">Clique para acessar</p>
+                        </div>
+                    `);
+        });
+      </script>
+    </div>
+  </div>
+</body>
+
+</html>
