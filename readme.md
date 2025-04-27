@@ -5,7 +5,7 @@ This repository contains the tasks done in the first classes, practicing the web
 
 ## Dashboard
 
-[Go](Todo Deploy Dashboard)
+[Go](https://kenzie-journey-enock.github.io/vanila_tasks)
 
 ## Projects
 
